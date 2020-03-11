@@ -2,8 +2,27 @@
 
 // 1. Configuration and helpers
 @import
-  'partials/variables',
-  'partials/typography',
-  'partials/grid',
-  'partials/mixins',
-  'partials/mediaqueries';
+  'partials/abstracts/variables',
+  'partials/abstracts/mixins';
+
+// 2. Vendors
+
+
+// 3. Base stuff
+@import
+  'partials/base/fonts',
+  'partials/base/grid',
+  'partials/base/typography';
+
+// 4. Layout-related sections
+@import
+  'partials/layout/header',
+  'partials/layout/mediaqueries';
+
+// 5. Components
+
+
+// 6. Page-specific styles
+
+
+// 7. Themes

@@ -1,0 +1,30 @@
+header {
+	position: fixed;
+	width: 93.1vw;
+	padding: 20px;
+	margin: -8px 40px 0 10px;
+	background-color: white;
+	border-bottom: 1px solid grey;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.name {
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.social {
+	padding: 5px;
+}
+
+.nav {
+	padding: 5px;
+}

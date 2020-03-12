@@ -1,3 +1,21 @@
+.hero-animation {
+  -webkit-animation: hue-animation 8s infinite;
+  animation: hue-animation 8s infinite; }
+
+@-webkit-keyframes hue-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg); }
+  50% {
+    -webkit-filter: hue-rotate(100deg); }
+  100% {
+    -webkit-filter: hue-rotate(0deg); } }
+@keyframes hue-animation {
+  0% {
+    filter: hue-rotate(0deg); }
+  50% {
+    filter: hue-rotate(100deg); }
+  100% {
+    filter: hue-rotate(0deg); } }
 .container {
   display: grid;
   padding: 0 10px 0 10px;
@@ -98,7 +116,7 @@ a:visited {
 /* Conteneur principal */
 .overlay-image {
   position: relative;
-  top: 65px;
+  top: 66px;
   width: 78%;
   height: 88%;
   margin: 0 auto; }
@@ -124,38 +142,5 @@ a:visited {
   text-shadow: 2px 2px 2px #000;
   font-size: 30px;
   line-height: 1.5em; }
-
-/* Old browsers 
-.backstretch {
-
-  background: #1e5799; 
-  background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #7db9e8 100%); /* FF3.6+
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(100%,#7db9e8)); /* Chrome,Safari4+
-  background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ 
-  background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); // Opera 12+
-  background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); // IE10+
-  background: radial-gradient(ellipse at center,  #1e5799 0%,#7db9e8 100%); // W3C
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient 
-}
-  
-*/
-.hero-animation {
-  -webkit-animation: hue-animation 8s infinite;
-  animation: hue-animation 8s infinite; }
-
-@-webkit-keyframes hue-animation {
-  0% {
-    -webkit-filter: hue-rotate(0deg); }
-  50% {
-    -webkit-filter: hue-rotate(100deg); }
-  100% {
-    -webkit-filter: hue-rotate(0deg); } }
-@keyframes hue-animation {
-  0% {
-    filter: hue-rotate(0deg); }
-  50% {
-    filter: hue-rotate(100deg); }
-  100% {
-    filter: hue-rotate(0deg); } }
 
 /*# sourceMappingURL=main.css.map */

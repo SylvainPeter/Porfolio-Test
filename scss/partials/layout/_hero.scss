@@ -1,17 +1,33 @@
-.hero {
-    margin-top: 65px;
-    padding: 150px 20px 20px 20px;
-    background-image: url('../img/test.jpg');
+
+/* Conteneur principal */
+.overlay-image {
+    position: relative;
+    top: 65px;
+    width: 78%;
+    height: 88%;
+    margin: 0 auto;
 }
 
-.presentation {
+/* Image originale */
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+
+/* Texte original */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 50%;
-    margin: 0 auto;
-    padding: 40px;
+    height: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
+    color: #fff;
     border: 5px solid white;
-    text-shadow: 2px 2px 4px grey;
-    font-size: 2em;
-    font-weight: bolder;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 30px;
+    line-height: 1.5em;
 }

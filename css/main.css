@@ -19,37 +19,32 @@
 .container {
   display: grid;
   padding: 0 10px 0 10px;
-  grid-template-columns: repeat 4, fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100vh 100vh 30vh 70vh 30vh 70vh 90vh 10vh;
   grid-gap: 5px 10px;
-  grid-template-areas: 'overlay-image 		overlay-image    overlay-image    overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'html       html     css      css' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'contact    contact      contact        contact' 'footer     footer       footer         footer'; }
+  grid-template-areas: 'overlay-image         overlay-image    overlay-image    overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'contact    contact      contact        contact' 'footer     footer       footer         footer'; }
 
 .overlay-image {
   grid-area: overlay-image; }
 
 .resume {
-  background-color: gold;
   grid-area: resume;
   padding: 80px 20px 20px 20px; }
 
 .photo {
-  background-color: maroon;
   grid-area: photo;
   padding: 80px 20px 20px 20px; }
 
 .skills {
-  background-color: gray;
   grid-area: skills;
   padding: 80px 20px 20px 20px; }
 
-.html {
-  background-color: brown;
-  grid-area: html;
+.skill1 {
+  grid-area: skill1;
   padding: 80px 20px 20px 20px; }
 
-.css {
-  background-color: navy;
-  grid-area: css;
+.skill2 {
+  grid-area: skill2;
   padding: 80px 20px 20px 20px; }
 
 .portfolio {
@@ -79,6 +74,7 @@ footer {
 
 header {
   position: fixed;
+  z-index: 1;
   width: 95vw;
   margin: -8px 40px 0 10px;
   padding: 30px 20px 10px 20px;
@@ -142,5 +138,40 @@ a:visited {
   text-shadow: 2px 2px 2px #000;
   font-size: 30px;
   line-height: 1.5em; }
+
+.resume {
+  background-color: #fffdd0;
+  font-size: 1.5em; }
+
+.photo {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  align-items: center; }
+
+.photo-sylvain {
+  width: 40%;
+  border-radius: 50%; }
+
+.skills {
+  background-color: orange; }
+
+.skill1 {
+  background-color: yellow; }
+
+.skill2 {
+  background-color: yellow; }
+
+.html {
+  height: 100px;
+  background-color: white;
+  -webkit-box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
+  box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81); }
+
+.css {
+  height: 100px;
+  background-color: white;
+  -webkit-box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
+  box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81); }
 
 /*# sourceMappingURL=main.css.map */

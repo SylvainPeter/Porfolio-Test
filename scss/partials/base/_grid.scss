@@ -2,13 +2,13 @@
     display: grid;
     padding: 0 10px 0 10px;
 
-    grid-template-columns: repeat (4, fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100vh 100vh 30vh 70vh 30vh 70vh 90vh 10vh;
     grid-gap: 5px 10px;
-    grid-template-areas: 'overlay-image 		overlay-image    overlay-image    overlay-image'
+    grid-template-areas: 'overlay-image         overlay-image    overlay-image    overlay-image'
     'resume     resume   photo    photo'
     'skills     skills   skills   skills'
-    'html       html     css      css'
+    'skill1       skill1     skill2      skill2'
     'portfolio  portfolio   portfolio   portfolio'
     'project1   project1     project2      project2'
     'contact    contact      contact        contact'
@@ -20,37 +20,27 @@
 }
 
 .resume {
-    background-color: gold;
-
     grid-area: resume;
     @include GRID-PADDING;
 }
 
 .photo {
-    background-color: maroon;
-
     grid-area: photo;
     @include GRID-PADDING;
 }
 
 .skills {
-    background-color: gray;
-
     grid-area: skills;
     @include GRID-PADDING;
 }
 
-.html {
-    background-color: brown;
-
-    grid-area: html;
+.skill1 {
+    grid-area: skill1;
     @include GRID-PADDING;
 }
 
-.css {
-    background-color: navy;
-
-    grid-area: css;
+.skill2 {
+    grid-area: skill2;
     @include GRID-PADDING;
 }
 

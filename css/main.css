@@ -20,9 +20,9 @@
   display: grid;
   padding: 0 10px 0 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh 100vh 30vh 70vh 30vh 70vh 90vh 10vh;
+  grid-template-rows: 100vh 100vh 30vh 70vh 70vh 70vh 30vh 70vh 90vh 10vh;
   grid-gap: 5px 10px;
-  grid-template-areas: 'overlay-image         overlay-image    overlay-image    overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'contact    contact      contact        contact' 'footer     footer       footer         footer'; }
+  grid-template-areas: 'overlay-image         overlay-image    overlay-image    overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'contact    contact      contact        contact' 'footer     footer       footer         footer'; }
 
 .overlay-image {
   grid-area: overlay-image; }
@@ -45,6 +45,22 @@
 
 .skill2 {
   grid-area: skill2;
+  padding: 80px 20px 20px 20px; }
+
+.skill3 {
+  grid-area: skill3;
+  padding: 80px 20px 20px 20px; }
+
+.skill4 {
+  grid-area: skill4;
+  padding: 80px 20px 20px 20px; }
+
+.skill5 {
+  grid-area: skill5;
+  padding: 80px 20px 20px 20px; }
+
+.skill6 {
+  grid-area: skill6;
   padding: 80px 20px 20px 20px; }
 
 .portfolio {
@@ -162,16 +178,59 @@ a:visited {
 .skill2 {
   background-color: yellow; }
 
-.html {
-  height: 100px;
-  background-color: white;
-  -webkit-box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
-  box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81); }
+.skill3 {
+  background-color: yellow; }
 
-.css {
-  height: 100px;
+.skill4 {
+  background-color: yellow; }
+
+.skill5 {
+  background-color: yellow; }
+
+.skill6 {
+  background-color: yellow; }
+
+.skill-title {
+  font-size: 2em; }
+
+.skill-icon1 {
+  color: orange;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon2 {
+  color: #0ff;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon5 {
+  color: yellow;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon3 {
+  color: pink;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon6 {
+  color: red;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon4 {
+  color: purple;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-box {
+  height: 250px;
   background-color: white;
   -webkit-box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
-  box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81); }
+  box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
+  padding: 20px; }
+
+.skill-text {
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

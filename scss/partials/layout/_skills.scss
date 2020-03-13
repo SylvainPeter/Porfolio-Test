@@ -10,16 +10,69 @@
     background-color: yellow;
 }
 
-.html {
-    height: 100px;
-    background-color: white;
-    -webkit-box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
-            box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
+.skill3 {
+    background-color: yellow;
+}
+.skill4 {
+    background-color: yellow;
+}
+.skill5 {
+    background-color: yellow;
+}
+.skill6 {
+    background-color: yellow;
 }
 
-.css {
-    height: 100px;
+.skill-title {
+    font-size: 2em;
+}
+
+.skill-icon1 {
+    color: orange;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon2 {
+    color: #0ff;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon5 {
+    color: yellow;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon3 {
+    color: pink;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon6 {
+    color: red;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon4 {
+    color: purple;
+
+    @include SKILL-ICON;
+}
+
+.skill-box {
+    height: 250px;
     background-color: white;
     -webkit-box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
             box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
+
+    @include SKILL-PADDING;
+}
+
+.skill-text {
+    font-size: 1.2em;
+    // overflow:auto;
 }

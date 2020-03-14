@@ -20,9 +20,8 @@
   display: grid;
   padding: 0 10px 0 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh 100vh 30vh 70vh 70vh 70vh 30vh 70vh 90vh 10vh;
-  grid-gap: 5px 10px;
-  grid-template-areas: 'overlay-image         overlay-image    overlay-image    overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'contact    contact      contact        contact' 'footer     footer       footer         footer'; }
+  grid-template-rows: 100vh 100vh 30vh 70vh 70vh 70vh 20vh 80vh 80vh 90vh 10vh;
+  grid-template-areas: 'overlay-image         overlay-image    overlay-image    overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact    contact      contact        contact' 'footer     footer       footer         footer'; }
 
 .overlay-image {
   grid-area: overlay-image; }
@@ -64,29 +63,32 @@
   padding: 80px 20px 20px 20px; }
 
 .portfolio {
-  background-color: yellow;
   grid-area: portfolio;
   padding: 80px 20px 20px 20px; }
 
 .project1 {
-  background-color: red;
   grid-area: project1;
   padding: 80px 20px 20px 20px; }
 
 .project2 {
-  background-color: green;
   grid-area: project2;
   padding: 80px 20px 20px 20px; }
 
+.project3 {
+  grid-area: project3;
+  padding: 80px 20px 20px 20px; }
+
+.project4 {
+  grid-area: project4;
+  padding: 80px 20px 20px 20px; }
+
 .contact {
-  background-color: pink;
   grid-area: contact;
   padding: 80px 20px 20px 20px; }
 
 footer {
-  background-color: violet;
-  grid-area: footer;
-  padding: 80px 20px 20px 20px; }
+  padding: 10px;
+  grid-area: footer; }
 
 header {
   position: fixed;
@@ -156,12 +158,14 @@ a:visited {
   line-height: 1.5em; }
 
 .resume {
-  background-color: #fffdd0;
+  color: white;
+  background-color: powderblue;
+  text-shadow: 2px 2px grey;
   font-size: 1.5em; }
 
 .photo {
   display: flex;
-  background-color: white;
+  background-color: powderblue;
   justify-content: center;
   align-items: center; }
 
@@ -170,25 +174,25 @@ a:visited {
   border-radius: 50%; }
 
 .skills {
-  background-color: orange; }
+  background-color: seashell; }
 
 .skill1 {
-  background-color: yellow; }
+  background-color: seashell; }
 
 .skill2 {
-  background-color: yellow; }
+  background-color: seashell; }
 
 .skill3 {
-  background-color: yellow; }
+  background-color: seashell; }
 
 .skill4 {
-  background-color: yellow; }
+  background-color: seashell; }
 
 .skill5 {
-  background-color: yellow; }
+  background-color: seashell; }
 
 .skill6 {
-  background-color: yellow; }
+  background-color: seashell; }
 
 .skill-title {
   font-size: 2em; }
@@ -232,5 +236,48 @@ a:visited {
 
 .skill-text {
   font-size: 1.2em; }
+
+.portfolio {
+  background-color: mediumaquamarine; }
+
+.project1 {
+  text-align: center;
+  background-color: mediumaquamarine; }
+
+.project2 {
+  text-align: center;
+  background-color: mediumaquamarine; }
+
+.project3 {
+  text-align: center;
+  background-color: mediumaquamarine; }
+
+.project4 {
+  text-align: center;
+  background-color: mediumaquamarine; }
+
+.portfolio-title {
+  color: white;
+  font-size: 2em; }
+
+.project-title {
+  color: white;
+  border-top: 5px solid;
+  font-size: 2em; }
+
+.project-text {
+  font-size: 1.1em;
+  color: #4a4a4a; }
+
+.contact {
+  background-color: seashell; }
+
+.contact-title {
+  font-size: 2em; }
+
+footer {
+  text-align: center;
+  background-color: lightgrey;
+  font-size: .8em; }
 
 /*# sourceMappingURL=main.css.map */

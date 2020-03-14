@@ -1,11 +1,13 @@
 .resume {
-    background-color: #fffdd0;
+    color: white;
+    background-color: $background-color4;
+    text-shadow: 2px 2px grey;
     font-size: 1.5em;
 }
 
 .photo {
     display: flex;
-    background-color: white;
+    background-color: $background-color4;
 
     justify-content: center;
     align-items: center;

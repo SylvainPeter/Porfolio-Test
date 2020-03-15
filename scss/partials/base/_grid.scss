@@ -3,8 +3,8 @@
     padding: 0 10px 0 10px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100vh 100vh 30vh 70vh 70vh 70vh 20vh 80vh 80vh 90vh 10vh;
-    grid-template-areas: 'overlay-image         overlay-image    overlay-image    overlay-image'
+    grid-template-rows: 100vh 100vh 30vh 70vh 70vh 70vh 20vh 80vh 80vh 90vh 90vh 10vh;
+    grid-template-areas: 'hero-overlay-image         hero-overlay-image    hero-overlay-image    hero-overlay-image'
     'resume     resume   photo    photo'
     'skills     skills   skills   skills'
     'skill1       skill1     skill2      skill2'
@@ -13,12 +13,13 @@
     'portfolio  portfolio   portfolio   portfolio'
     'project1   project1     project2      project2'
     'project3   project3     project4      project4'
-    'contact    contact      contact        contact'
+    'contact-overlay-image    contact-overlay-image      contact-overlay-image        contact-overlay-image'
+    'contact-overlay-image    contact-overlay-image      contact-overlay-image        contact-overlay-image'
     'footer     footer       footer         footer';
 }
 
-.overlay-image {
-    grid-area: overlay-image;
+.hero-overlay-image {
+    grid-area: hero-overlay-image;
 }
 
 .resume {
@@ -89,8 +90,8 @@
 }
 
 
-.contact {
-    grid-area: contact;
+.contact-overlay-image {
+    grid-area: contact-overlay-image;
     @include GRID-PADDING;
 }
 

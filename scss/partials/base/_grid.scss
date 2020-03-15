@@ -1,3 +1,5 @@
+// Grille Principale
+
 .container {
     display: grid;
     padding: 0 10px 0 10px;
@@ -99,4 +101,28 @@ footer {
     padding: 10px;
 
     grid-area: footer;
+}
+
+
+
+// Grille Project 1
+
+.container-project1 {
+    display: grid;
+    padding: 0 10px 0 10px;
+
+    grid-gap: 5px;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: 'project1-image project1-text';
+}
+
+.project1-image {
+    grid-area: project1-image;
+    @include GRID-PADDING;
+}
+
+.project1-text {
+    grid-area: project1-text;
+    @include GRID-PADDING;
 }

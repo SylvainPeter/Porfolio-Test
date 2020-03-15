@@ -90,6 +90,22 @@ footer {
   padding: 10px;
   grid-area: footer; }
 
+.container-project1 {
+  display: grid;
+  padding: 0 10px 0 10px;
+  grid-gap: 5px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+  grid-template-areas: 'project1-image project1-text'; }
+
+.project1-image {
+  grid-area: project1-image;
+  padding: 80px 20px 20px 20px; }
+
+.project1-text {
+  grid-area: project1-text;
+  padding: 80px 20px 20px 20px; }
+
 header {
   position: fixed;
   z-index: 1;
@@ -306,5 +322,14 @@ footer {
   text-align: center;
   background-color: lightgrey;
   font-size: .8em; }
+
+.project1-image {
+  text-align: center;
+  opacity: .7;
+  background-color: seashell; }
+
+.project1-text {
+  opacity: .7;
+  background-color: seashell; }
 
 /*# sourceMappingURL=main.css.map */

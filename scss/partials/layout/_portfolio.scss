@@ -2,6 +2,12 @@
     background-color: $background-color3;
 }
 
+// PAREIL QUE SKILL-TITLE : A FACTORISER !
+.portfolio-title {
+    color: white;
+    font-size: 2em;
+}
+
 .project1 {
     text-align: center;
     background-color: $background-color3;
@@ -22,20 +28,19 @@
     background-color: $background-color3;
 }
 
-// PAREIL QUE SKILL-TITLE : A FACTORISER !
-.portfolio-title {
-    color: white;
-    font-size: 2em;
-}
-
 .project-title {
     color: white;
     border-top: 5px solid;
     font-size: 2em;
 }
 
-
 .project-text {
-    font-size: 1.1em;
     color: #4a4a4a;
+    font-size: 100%;
+}
+
+.project-image-miniature {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
 }

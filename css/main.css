@@ -90,20 +90,20 @@ footer {
   padding: 10px;
   grid-area: footer; }
 
-.container-project1 {
+.container-project {
   display: grid;
   padding: 0 10px 0 10px;
   grid-gap: 5px;
   grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
-  grid-template-areas: 'project1-image project1-text'; }
+  grid-template-rows: 100vh;
+  grid-template-areas: 'project-image-container project-text-container'; }
 
-.project1-image {
-  grid-area: project1-image;
+.project-image-container {
+  grid-area: project-image-container;
   padding: 80px 20px 20px 20px; }
 
-.project1-text {
-  grid-area: project1-text;
+.project-text-container {
+  grid-area: project-text-container;
   padding: 80px 20px 20px 20px; }
 
 header {
@@ -251,10 +251,14 @@ a:visited {
   padding: 20px; }
 
 .skill-text {
-  font-size: 1.2em; }
+  font-size: 110%; }
 
 .portfolio {
   background-color: mediumaquamarine; }
+
+.portfolio-title {
+  color: white;
+  font-size: 2em; }
 
 .project1 {
   text-align: center;
@@ -272,18 +276,19 @@ a:visited {
   text-align: center;
   background-color: mediumaquamarine; }
 
-.portfolio-title {
-  color: white;
-  font-size: 2em; }
-
 .project-title {
   color: white;
   border-top: 5px solid;
   font-size: 2em; }
 
 .project-text {
-  font-size: 1.1em;
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  font-size: 100%; }
+
+.project-image-miniature {
+  width: 100%;
+  max-width: 450px;
+  height: auto; }
 
 .contact-overlay-image {
   position: relative;
@@ -310,11 +315,11 @@ a:visited {
   text-align: center;
   color: #fff;
   border: 5px solid white;
-  font-size: 1.4em;
+  font-size: 130%;
   line-height: 1.2em; }
 
 .contact-title {
-  margin-top: 40px;
+  margin-top: 80px;
   font-size: 1.8em; }
 
 footer {
@@ -323,13 +328,17 @@ footer {
   background-color: lightgrey;
   font-size: .8em; }
 
-.project1-image {
+.project-image-container {
   text-align: center;
-  opacity: .7;
   background-color: seashell; }
 
-.project1-text {
-  opacity: .7;
+.project-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  opacity: .7; }
+
+.project-text-container {
   background-color: seashell; }
 
 /*# sourceMappingURL=main.css.map */

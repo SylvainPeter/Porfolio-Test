@@ -141,7 +141,10 @@ a:visited {
   display: flex;
   width: 20em;
   padding: 3px;
-  justify-content: space-between; }
+  justify-content: space-around; }
+
+nav {
+  width: 100%; }
 
 /* Conteneur principal */
 .hero-overlay-image {
@@ -188,6 +191,29 @@ a:visited {
 .photo-sylvain {
   width: 40%;
   border-radius: 50%; }
+
+.myButton {
+  display: inline-block;
+  padding: 8px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #3a8a9e;
+  border: 1px solid #d6bcd6;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  background-color: #ededed;
+  box-shadow: 3px 4px 0 0 #899599;
+  text-shadow: -1px 0 0 #e1e2ed;
+  font-family: Arial;
+  font-size: 18px; }
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba; }
+
+.myButton:active {
+  position: relative;
+  top: 1px; }
 
 .skills {
   background-color: seashell; }

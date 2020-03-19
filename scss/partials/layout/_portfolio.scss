@@ -5,7 +5,8 @@
 // PAREIL QUE SKILL-TITLE : A FACTORISER !
 .portfolio-title {
     color: white;
-    font-size: 2em;
+    font-family: $font-title;
+    font-size: 2.2em;
 }
 
 .project1 {
@@ -31,12 +32,13 @@
 .project-title {
     color: white;
     border-top: 5px solid;
+    font-family: 'Roboto';
     font-size: 2em;
 }
 
 .project-text {
     color: #4a4a4a;
-    font-size: 100%;
+    font-size: 110%;
 }
 
 .project-image-miniature {

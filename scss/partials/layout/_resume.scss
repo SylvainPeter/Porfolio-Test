@@ -1,8 +1,18 @@
 .resume {
     color: white;
     background-color: $background-color4;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+}
+
+// A fusionner avec les autres classes de titres
+.resume-title {
+    font-family: $font-title;
+    font-size: 2.2em;
+}
+
+// A fusionner avec les autres classes de sous-titres
+.resume-text {
+    font-family: $font-subtitle;
+    font-size: 1.3em;
 }
 
 .photo {

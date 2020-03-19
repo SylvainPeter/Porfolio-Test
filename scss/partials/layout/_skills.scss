@@ -24,7 +24,8 @@
 }
 
 .skill-title {
-    font-size: 2em;
+    font-family: $font-title;
+    font-size: 2.2em;
 }
 
 .skill-icon1 {
@@ -64,7 +65,7 @@
 }
 
 .skill-box {
-    height: 250px;
+    height: 200px;
     background-color: white;
     -webkit-box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
             box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
@@ -72,7 +73,17 @@
     @include SKILL-PADDING;
 }
 
-.skill-text {
+.skill-subtitle {
+    font-family: $font-subtitle;
     font-size: 110%;
+    line-height: 1.5em;
+    // overflow:auto;
+}
+
+.skill-text {
+    font-family: 'Montserrat';
+    font-size: 100%;
+    font-weight: bolder;
+    line-height: 25px;
     // overflow:auto;
 }

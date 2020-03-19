@@ -1,6 +1,9 @@
 .project-image-container {
     text-align: center;
     background-color: $background-color2;
+                font-family: 'Lato';
+    font-size: 2em;
+    line-height:1.2em;
 }
 
 .project-image {
@@ -8,8 +11,13 @@
     max-width: 500px;
     height: auto;
     opacity: .7;
+
 }
 
 .project-text-container {
     background-color: $background-color2;
+    font-family: 'Lato';
+    font-size: 1em;
+    line-height:1.2em;
 }
+

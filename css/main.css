@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300|Montserrat:200|Signika");
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto:300|Montserrat:200|Signika|Open+Sans");
 .hero-animation {
   -webkit-animation: hue-animation 8s infinite;
   animation: hue-animation 8s infinite; }
@@ -142,6 +142,8 @@ a:visited {
   display: flex;
   width: 20em;
   padding: 3px;
+  font-family: 'Roboto';
+  font-size: .9em;
   justify-content: space-around; }
 
 nav {
@@ -174,15 +176,25 @@ nav {
   color: #fff;
   border: 5px solid white;
   text-shadow: 2px 2px 2px #000;
-  font-family: 'Signika';
+  font-family: 'Inter';
   font-size: 2em;
   line-height: 1.5em; }
 
+.bolder {
+  font-weight: bolder;
+  font-size: 110%; }
+
 .resume {
   color: white;
-  background-color: powderblue;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em; }
+  background-color: powderblue; }
+
+.resume-title {
+  font-family: "Open Sans";
+  font-size: 2.2em; }
+
+.resume-text {
+  font-family: "Roboto";
+  font-size: 1.3em; }
 
 .photo {
   display: flex;
@@ -239,7 +251,8 @@ nav {
   background-color: seashell; }
 
 .skill-title {
-  font-size: 2em; }
+  font-family: "Open Sans";
+  font-size: 2.2em; }
 
 .skill-icon1 {
   color: orange;
@@ -272,21 +285,30 @@ nav {
   font-size: 2.5em; }
 
 .skill-box {
-  height: 250px;
+  height: 200px;
   background-color: white;
   -webkit-box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
   box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
   padding: 20px; }
 
+.skill-subtitle {
+  font-family: "Roboto";
+  font-size: 110%;
+  line-height: 1.5em; }
+
 .skill-text {
-  font-size: 110%; }
+  font-family: 'Montserrat';
+  font-size: 100%;
+  font-weight: bolder;
+  line-height: 25px; }
 
 .portfolio {
   background-color: mediumaquamarine; }
 
 .portfolio-title {
   color: white;
-  font-size: 2em; }
+  font-family: "Open Sans";
+  font-size: 2.2em; }
 
 .project1 {
   text-align: center;
@@ -307,11 +329,12 @@ nav {
 .project-title {
   color: white;
   border-top: 5px solid;
+  font-family: 'Roboto';
   font-size: 2em; }
 
 .project-text {
   color: #4a4a4a;
-  font-size: 100%; }
+  font-size: 110%; }
 
 .project-image-miniature {
   width: 100%;
@@ -343,6 +366,7 @@ nav {
   text-align: center;
   color: #fff;
   border: 5px solid white;
+  font-family: 'Signika';
   font-size: 130%;
   line-height: 1.2em; }
 
@@ -358,7 +382,10 @@ footer {
 
 .project-image-container {
   text-align: center;
-  background-color: seashell; }
+  background-color: seashell;
+  font-family: 'Lato';
+  font-size: 2em;
+  line-height: 1.2em; }
 
 .project-image {
   width: 100%;
@@ -367,6 +394,9 @@ footer {
   opacity: .7; }
 
 .project-text-container {
-  background-color: seashell; }
+  background-color: seashell;
+  font-family: 'Lato';
+  font-size: 1em;
+  line-height: 1.2em; }
 
 /*# sourceMappingURL=main.css.map */

@@ -28,7 +28,12 @@
     color: #fff;
     border: 5px solid white;
     text-shadow: 2px 2px 2px #000;
-    font-family: 'Signika';
+    font-family: 'Inter';
     font-size: 2em;
     line-height: 1.5em;
+}
+
+.bolder {
+    font-weight: bolder;
+    font-size: 110%;
 }

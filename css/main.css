@@ -107,6 +107,13 @@ footer {
   grid-area: project-text-container;
   padding: 80px 20px 20px 20px; }
 
+a {
+  text-decoration: none;
+  color: gray; }
+
+a:hover {
+  color: mediumaquamarine; }
+
 header {
   position: fixed;
   z-index: 1;
@@ -119,13 +126,6 @@ header {
 .flex {
   display: flex;
   justify-content: space-between; }
-
-a:link {
-  text-decoration: none;
-  color: gray; }
-
-a:visited {
-  color: gray; }
 
 .social {
   display: flex;
@@ -398,5 +398,8 @@ footer {
   font-family: 'Lato';
   font-size: 1em;
   line-height: 1.2em; }
+
+.project-image:hover {
+  opacity: .5; }
 
 /*# sourceMappingURL=main.css.map */

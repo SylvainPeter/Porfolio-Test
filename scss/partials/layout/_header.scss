@@ -14,15 +14,6 @@ header {
     justify-content: space-between;
 }
 
-a:link {
-    text-decoration: none;
-    color: $link-color1;
-}
-
-a:visited {
-    color: $link-color1;
-}
-
 .social {
     display: flex;
     width: 6em;

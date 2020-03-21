@@ -107,6 +107,12 @@ footer {
   grid-area: project-text-container;
   padding: 80px 20px 20px 20px; }
 
+@media screen and (max-width: 768px) {
+  .container {
+    display: grid;
+    padding: 0 10px 0 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'hero-overlay-image ' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'portfolio' 'project1' 'project2' 'project3' 'project4' 'contact-overlay-image ' 'footer'; } }
 a {
   text-decoration: none;
   color: gray; }
@@ -181,9 +187,17 @@ nav {
   line-height: 3rem; }
 
 .bolder {
-  font-size: 110%;
+  font-size: 2.7rem;
   font-weight: bolder; }
 
+@media screen and (max-width: 768px) {
+  .bolder {
+    font-size: 30px;
+    font-weight: bolder; }
+
+  .hero-text {
+    font-size: 4vw;
+    line-height: 2rem; } }
 .resume {
   color: white;
   background-color: powderblue; }
@@ -264,18 +278,8 @@ nav {
   margin-right: 10px;
   font-size: 2.5em; }
 
-.skill-icon5 {
-  color: yellow;
-  margin-right: 10px;
-  font-size: 2.5em; }
-
 .skill-icon3 {
   color: pink;
-  margin-right: 10px;
-  font-size: 2.5em; }
-
-.skill-icon6 {
-  color: red;
   margin-right: 10px;
   font-size: 2.5em; }
 
@@ -284,8 +288,18 @@ nav {
   margin-right: 10px;
   font-size: 2.5em; }
 
+.skill-icon5 {
+  color: yellow;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon6 {
+  color: red;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
 .skill-box {
-  height: 200px;
+  height: 15vw;
   background-color: white;
   -webkit-box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);
   box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81);

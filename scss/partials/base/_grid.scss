@@ -126,3 +126,31 @@ footer {
     grid-area: project-text-container;
     @include GRID-PADDING;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        padding: 0 10px 0 10px;
+
+        grid-template-columns: 1fr;
+        grid-template-areas: 'hero-overlay-image '
+        'resume'
+        'photo'
+        'skills'
+        'skill1'
+        'skill2'
+        'skill3'
+        'skill4'
+        'skill5'
+        'skill6'
+        'portfolio'
+        'project1'
+        'project2'
+        'project3'
+        'project4'
+        'contact-overlay-image '
+        'footer';
+    }
+}

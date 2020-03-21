@@ -40,20 +40,8 @@
     @include SKILL-ICON;
 }
 
-.skill-icon5 {
-    color: yellow;
-
-    @include SKILL-ICON;
-}
-
 .skill-icon3 {
     color: pink;
-
-    @include SKILL-ICON;
-}
-
-.skill-icon6 {
-    color: red;
 
     @include SKILL-ICON;
 }
@@ -64,8 +52,21 @@
     @include SKILL-ICON;
 }
 
+.skill-icon5 {
+    color: yellow;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon6 {
+    color: red;
+
+    @include SKILL-ICON;
+}
+
+
 .skill-box {
-    height: 200px;
+    height: 15vw;
     background-color: white;
     -webkit-box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
             box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);

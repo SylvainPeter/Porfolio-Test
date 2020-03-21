@@ -1,4 +1,4 @@
-// Animations au survol des éléments du menu
+/* Animations au survol des éléments du menu
 
 const a = document.querySelector('#accueil');
 const b = document.querySelector('#parcours');
@@ -46,3 +46,4 @@ e.addEventListener ("mouseleave", event => {
 	e.classList.remove('animated', 'swing')
 	});
 
+*/

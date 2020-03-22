@@ -20,6 +20,7 @@
     background-color: $background-color2;
 }
 .skill6 {
+    padding-bottom: 100px;
     background-color: $background-color2;
 }
 
@@ -67,24 +68,39 @@
 
 .skill-box {
     height: 15vw;
+    padding: 12px 14px 0 20px;
     background-color: white;
     -webkit-box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
             box-shadow: 3px 6px 11px 4px rgba(0,0,0,.81);
-
-    @include SKILL-PADDING;
 }
 
 .skill-subtitle {
     font-family: $font-subtitle;
-    font-size: 110%;
+    font-size: 1em;
     line-height: 1.5em;
     // overflow:auto;
 }
 
 .skill-text {
     font-family: 'Montserrat';
-    font-size: 100%;
+    font-size: 1em;
     font-weight: bolder;
     line-height: 25px;
     // overflow:auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .skill-box {
+        height: 90%;
+    }
+
+    .skill-text {
+        font-size: calc(6px + .5em);
+    }
+
+    .skill-subtitle {
+        font-size: calc(2px + 1em);
+    }
 }

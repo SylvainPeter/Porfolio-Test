@@ -38,6 +38,7 @@
     font-weight: bolder;
 }
 
+
 @media screen and (max-width: 768px) {
     .bolder {
         font-size: 30px;
@@ -47,5 +48,11 @@
     .hero-text {
         font-size: 4vw;
         line-height: 2rem;
+    }
+
+    .hero-image {
+        width: 128%;
+        height: 97%;
+        margin-left: -33px;
     }
 }

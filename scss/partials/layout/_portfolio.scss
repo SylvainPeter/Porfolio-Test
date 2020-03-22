@@ -25,6 +25,7 @@
 }
 
 .project4 {
+    padding-bottom: 100px;
     text-align: center;
     background-color: $background-color3;
 }
@@ -38,11 +39,26 @@
 
 .project-text {
     color: #4a4a4a;
-    font-size: 110%;
+    font-size: 1.1em;
 }
 
 .project-image-miniature {
     width: 100%;
     max-width: 450px;
     height: auto;
+    transition: all ease 200ms;
+}
+
+
+// Effet au survol des miniatures
+.project-image-miniature:hover {
+    transform: scale(1.05);
+    opacity: .9;
+}
+
+
+@media screen and (max-width: 768px) {
+    .project-text {
+        font-size: calc(2px + .5em);
+    }
 }

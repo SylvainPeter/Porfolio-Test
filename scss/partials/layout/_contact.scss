@@ -34,3 +34,17 @@
     margin-top: 80px;
     font-size: 1.8em;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .contact-text {
+        top: 57%;
+        width: 65%;
+        font-size: calc(2px + .8em);
+    }
+
+    .contact-title {
+        margin-top: 40px;
+    }
+}

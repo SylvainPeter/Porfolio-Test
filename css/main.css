@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Roboto:300|Montserrat:200|Signika|Open+Sans");
 .hero-animation {
-  -webkit-animation: hue-animation 8s infinite;
-  animation: hue-animation 8s infinite; }
+  -webkit-animation: hue-animation 16s infinite;
+  animation: hue-animation 16s infinite; }
 
 @-webkit-keyframes hue-animation {
   0% {
     -webkit-filter: hue-rotate(0deg); }
   50% {
-    -webkit-filter: hue-rotate(100deg); }
+    -webkit-filter: hue-rotate(40deg); }
   100% {
     -webkit-filter: hue-rotate(0deg); } }
 @keyframes hue-animation {
   0% {
     filter: hue-rotate(0deg); }
   50% {
-    filter: hue-rotate(100deg); }
+    filter: hue-rotate(40deg); }
   100% {
     filter: hue-rotate(0deg); } }
 .container {
@@ -121,6 +121,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "project-image-container" "\a     project-text-container"; } }
+.container {
+  background-color: seashell; }
+
 a {
   text-decoration: none;
   color: gray; }
@@ -213,7 +216,7 @@ nav {
     margin-left: -33px; } }
 .resume {
   color: white;
-  background-color: powderblue; }
+  background-color: #b3b0e6; }
 
 .resume-title {
   font-family: "Open Sans";
@@ -225,7 +228,7 @@ nav {
 
 .photo {
   display: flex;
-  background-color: powderblue;
+  background-color: #b3b0e6;
   justify-content: center;
   align-items: center; }
 
@@ -395,7 +398,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   .project-text {
-    font-size: calc(2px + .5em); } }
+    font-size: calc(3px + 0.6em); } }
 .contact-overlay-image {
   position: relative;
   top: -70px;
@@ -406,16 +409,15 @@ nav {
 .contact-image {
   display: block;
   width: 100%;
-  height: 80%;
-  opacity: .7; }
+  height: 80%; }
 
 /* Texte original */
 .contact-text {
   position: absolute;
-  top: 50%;
+  top: 66%;
   left: 50%;
-  width: 50%;
-  height: 50%;
+  width: 56%;
+  height: 64%;
   margin-top: -80px;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -431,18 +433,26 @@ nav {
 
 @media screen and (max-width: 768px) {
   .contact-text {
-    top: 57%;
+    top: 71%;
     width: 65%;
-    font-size: calc(2px + .8em); }
+    height: 55%;
+    font-size: calc(2px + .8em);
+    line-height: 1em; }
 
   .contact-title {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+
+  .contact-image {
+    height: 100%; } }
 footer {
   z-index: 1;
   text-align: center;
   background-color: lightgrey;
   font-size: .8em; }
 
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 13px; } }
 .project-image-container {
   text-align: center;
   background-color: seashell;

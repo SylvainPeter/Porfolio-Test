@@ -4,3 +4,11 @@ footer {
     background-color: lightgrey;
     font-size: .8em;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    footer {
+  padding: 13px;
+    }
+}

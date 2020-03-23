@@ -1,3 +1,9 @@
+// Global style
+.container {
+	background-color: $background-color2;
+}
+
+
 // Basic styles for links
 
 a {
@@ -8,3 +14,4 @@ a {
 a:hover {
     color: $link-color2;
 }
+

@@ -1,6 +1,6 @@
 .hero-animation {
-    -webkit-animation: hue-animation 8s infinite;
-            animation: hue-animation 8s infinite;
+    -webkit-animation: hue-animation 16s infinite;
+            animation: hue-animation 16s infinite;
 }
 
 @-webkit-keyframes hue-animation {
@@ -9,7 +9,7 @@
     }
 
     50% {
-        -webkit-filter: hue-rotate(100deg);
+        -webkit-filter: hue-rotate(40deg);
     }
 
     100% {
@@ -23,7 +23,7 @@
     }
 
     50% {
-        filter: hue-rotate(100deg);
+        filter: hue-rotate(40deg);
     }
 
     100% {

@@ -107,7 +107,7 @@ footer {
   grid-area: project-text-container;
   padding: 80px 20px 20px 20px; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container {
     display: grid;
     padding: 0 10px 0 10px;
@@ -204,10 +204,14 @@ nav {
 @media screen and (max-width: 768px) {
   .bolder {
     font-size: 30px;
+    font-size: calc(7px + 3vw);
     font-weight: bolder; }
 
   .hero-text {
+    top: 47%;
+    height: 75%;
     font-size: 4vw;
+    font-size: calc(7px + 3vw);
     line-height: 2rem; }
 
   .hero-image {
@@ -340,7 +344,8 @@ nav {
   font-family: 'Montserrat';
   font-size: 1em;
   font-weight: bolder;
-  line-height: 25px; }
+  line-height: 25px;
+  overflow: auto; }
 
 @media screen and (max-width: 768px) {
   .skill-box {

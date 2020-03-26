@@ -29,28 +29,19 @@
     color: #fff;
     border: 5px solid white;
     text-shadow: 2px 2px 2px #000;
-    font-size: calc(7px + 2.2vw);
     line-height: 3rem;
 }
 
-.bolder {
-    font-size: 2.7rem;
-    font-weight: bolder;
+.hero-subtitle {
+    font-size: 1.3em;
 }
 
 
-@media screen and (max-width: 768px) {
-    .bolder {
-        font-size: 30px;
-        font-size: calc(7px + 3vw);
-        font-weight: bolder;
-    }
 
+@media screen and (max-width: 768px) {
     .hero-text {
         top: 47%;
         height: 75%;
-        font-size: 4vw;
-        font-size: calc(7px + 3vw);
         line-height: 2rem;
     }
 

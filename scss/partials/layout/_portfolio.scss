@@ -1,12 +1,6 @@
 .portfolio {
-    background-color: $background-color3;
-}
-
-// PAREIL QUE SKILL-TITLE : A FACTORISER !
-.portfolio-title {
     color: white;
-    font-family: $font-title;
-    font-size: 2.2em;
+    background-color: $background-color3;
 }
 
 .project1 {
@@ -34,12 +28,10 @@
     color: white;
     border-top: 5px solid;
     font-family: 'Roboto';
-    font-size: 2em;
 }
 
 .project-text {
     color: #4a4a4a;
-    font-size: 1.1em;
 }
 
 .project-image-miniature {
@@ -58,7 +50,4 @@
 
 
 @media screen and (max-width: 768px) {
-    .project-text {
-        font-size: calc(3px + 0.6em);
-    }
 }

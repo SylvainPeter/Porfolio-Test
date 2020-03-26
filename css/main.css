@@ -121,6 +121,19 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "project-image-container" "\a     project-text-container"; } }
+html {
+  font-size: calc(.9em + .3vw); }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-family: 'Open Sans';
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.7em; }
+
 .container {
   background-color: seashell; }
 
@@ -149,7 +162,7 @@ header {
   width: 6em;
   margin-left: 2%;
   padding: 3px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   justify-content: space-between; }
 
 .logo {
@@ -160,7 +173,7 @@ header {
   width: 20em;
   padding: 3px;
   font-family: 'Roboto';
-  font-size: .9em;
+  font-size: .8em;
   justify-content: space-around; }
 
 nav {
@@ -194,24 +207,15 @@ nav {
   color: #fff;
   border: 5px solid white;
   text-shadow: 2px 2px 2px #000;
-  font-size: calc(7px + 2.2vw);
   line-height: 3rem; }
 
-.bolder {
-  font-size: 2.7rem;
-  font-weight: bolder; }
+.hero-subtitle {
+  font-size: 1.3em; }
 
 @media screen and (max-width: 768px) {
-  .bolder {
-    font-size: 30px;
-    font-size: calc(7px + 3vw);
-    font-weight: bolder; }
-
   .hero-text {
     top: 47%;
     height: 75%;
-    font-size: 4vw;
-    font-size: calc(7px + 3vw);
     line-height: 2rem; }
 
   .hero-image {
@@ -222,13 +226,8 @@ nav {
   color: white;
   background-color: #b3b0e6; }
 
-.resume-title {
-  font-family: "Open Sans";
-  font-size: 2.2em; }
-
 .resume-text {
-  font-family: "Roboto";
-  font-size: 1.3em; }
+  font-family: "Roboto"; }
 
 .photo {
   display: flex;
@@ -252,8 +251,7 @@ nav {
   background-color: #ededed;
   box-shadow: 3px 4px 0 0 #899599;
   text-shadow: -1px 0 0 #e1e2ed;
-  font-family: Arial;
-  font-size: 18px; }
+  font-family: Arial; }
 
 .myButton:hover {
   background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
@@ -264,9 +262,6 @@ nav {
   top: 1px; }
 
 @media screen and (max-width: 768px) {
-  .resume-text {
-    font-size: calc(4px + .7em); }
-
   .photo-sylvain {
     width: 45vh; }
 
@@ -295,8 +290,8 @@ nav {
   background-color: seashell; }
 
 .skill-title {
-  font-family: "Open Sans";
-  font-size: 2.2em; }
+  font-size: 1.5em;
+  font-family: 'Open Sans'; }
 
 .skill-icon1 {
   color: orange;
@@ -336,33 +331,21 @@ nav {
   box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81); }
 
 .skill-subtitle {
-  font-family: "Roboto";
-  font-size: 1.2em;
-  line-height: 1.5em; }
+  font-family: "Roboto"; }
 
 .skill-text {
   font-family: 'Montserrat';
-  font-size: 1em;
   font-weight: bolder;
   line-height: 25px;
-  overflow: auto; }
+  overflow: auto;
+  font-size: 0.9em; }
 
 @media screen and (max-width: 768px) {
   .skill-box {
-    height: 90%; }
-
-  .skill-text {
-    font-size: calc(6px + .5em); }
-
-  .skill-subtitle {
-    font-size: calc(2px + 1em); } }
+    height: 90%; } }
 .portfolio {
-  background-color: mediumaquamarine; }
-
-.portfolio-title {
   color: white;
-  font-family: "Open Sans";
-  font-size: 2.2em; }
+  background-color: mediumaquamarine; }
 
 .project1 {
   text-align: center;
@@ -384,12 +367,10 @@ nav {
 .project-title {
   color: white;
   border-top: 5px solid;
-  font-family: 'Roboto';
-  font-size: 2em; }
+  font-family: 'Roboto'; }
 
 .project-text {
-  color: #4a4a4a;
-  font-size: 1.1em; }
+  color: #4a4a4a; }
 
 .project-image-miniature {
   width: 100%;
@@ -401,9 +382,6 @@ nav {
   transform: scale(1.05);
   opacity: .9; }
 
-@media screen and (max-width: 768px) {
-  .project-text {
-    font-size: calc(3px + 0.6em); } }
 .contact-overlay-image {
   position: relative;
   top: -70px;
@@ -413,8 +391,7 @@ nav {
 /* Image originale */
 .contact-image {
   display: block;
-  width: 100%;
-  height: 80%; }
+  width: 100%; }
 
 /* Texte original */
 .contact-text {
@@ -429,20 +406,17 @@ nav {
   color: #fff;
   border: 5px solid white;
   font-family: 'Signika';
-  font-size: 130%;
-  line-height: 1.2em; }
+  font-size: 1.1em; }
 
 .contact-title {
-  margin-top: 80px;
-  font-size: 1.8em; }
+  margin-top: 80px; }
 
 @media screen and (max-width: 768px) {
   .contact-text {
     top: 71%;
     width: 65%;
     height: 55%;
-    font-size: calc(2px + .8em);
-    line-height: 1em; }
+    font-size: .9em; }
 
   .contact-title {
     margin-top: 40px; }
@@ -462,7 +436,6 @@ footer {
   text-align: center;
   background-color: seashell;
   font-family: 'Lato';
-  font-size: 2em;
   line-height: 1.2em; }
 
 .project-image {
@@ -474,7 +447,6 @@ footer {
 .project-text-container {
   background-color: seashell;
   font-family: 'Lato';
-  font-size: 1em;
   line-height: 1.2em; }
 
 .project-image:hover {

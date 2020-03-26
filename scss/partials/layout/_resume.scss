@@ -3,16 +3,10 @@
     background-color: $background-color5;
 }
 
-// A fusionner avec les autres classes de titres
-.resume-title {
-    font-family: $font-title;
-    font-size: 2.2em;
-}
 
 // A fusionner avec les autres classes de sous-titres
 .resume-text {
     font-family: $font-subtitle;
-    font-size: 1.3em;
 }
 
 .photo {
@@ -41,7 +35,6 @@
     box-shadow: 3px 4px 0 0 #899599;
     text-shadow: -1px 0 0 #e1e2ed;
     font-family: Arial;
-    font-size: 18px;
 }
 .myButton:hover {
     background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
@@ -55,9 +48,6 @@
 
 
 @media screen and (max-width: 768px) {
-    .resume-text {
-        font-size: calc(4px + .7em);
-    }
 
     .photo-sylvain {
         width: 45vh;

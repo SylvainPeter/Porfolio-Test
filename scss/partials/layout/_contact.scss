@@ -9,7 +9,6 @@
 .contact-image {
     display: block;
     width: 100%;
-    height: 80%;
 }
 
 /* Texte original */
@@ -25,13 +24,11 @@
     color: #fff;
     border: 5px solid white;
     font-family: 'Signika';
-    font-size: 130%;
-    line-height: 1.2em;
+    font-size: 1.1em;
 }
 
 .contact-title {
     margin-top: 80px;
-    font-size: 1.8em;
 }
 
 
@@ -41,8 +38,7 @@
         top: 71%;
         width: 65%;
         height: 55%;
-        font-size: calc(2px + .8em);
-        line-height: 1em;
+        font-size: .9em;
     }
 
     .contact-title {

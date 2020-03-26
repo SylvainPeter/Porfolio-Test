@@ -1,6 +1,23 @@
 // Global style
+html {
+    font-size: calc(.9em + .3vw);
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.7em;
+}
+
 .container {
-	background-color: $background-color2;
+    background-color: $background-color2;
 }
 
 
@@ -14,4 +31,3 @@ a {
 a:hover {
     color: $link-color2;
 }
-

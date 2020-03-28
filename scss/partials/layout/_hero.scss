@@ -46,8 +46,22 @@
     }
 
     .hero-image {
-        width: 128%;
-        height: 97%;
+        width: 112%;
+        height: auto;
         margin-left: -33px;
+    }
+
+    div.hero-text {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .hero-image {
+        width: 129%;
+        height: 95%;
     }
 }

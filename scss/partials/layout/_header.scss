@@ -28,6 +28,10 @@ header {
     margin: -10px 8% 0 20%;
 }
 
+.logo-project {
+    margin: -10px 8% 0 20%;
+}
+
 .menu {
     display: flex;
     width: 20em;
@@ -40,4 +44,31 @@ header {
 
 nav {
     width: 100%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .fa-github:before {
+    }
+
+    .fa-linkedin-in:before {
+        margin: -31px;
+    }
+
+
+    .fa-envelope:before {
+        margin: -43px;
+    }
+
+    .social {
+        margin-left: -4%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu {
+        margin-right: 19px;
+    }
 }

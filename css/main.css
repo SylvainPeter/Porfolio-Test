@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato|Roboto:300|Montserrat:200|Signika|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Lato|Roboto:300|Montserrat:200|Signika|Open+Sans|Poiret+One");
 .hero-animation {
   -webkit-animation: hue-animation 16s infinite;
   animation: hue-animation 16s infinite; }
@@ -107,7 +107,7 @@ footer {
   grid-area: project-text-container;
   padding: 80px 20px 20px 20px; }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .container {
     display: grid;
     padding: 0 10px 0 10px;
@@ -135,6 +135,12 @@ h2 {
 h3 {
   font-size: 1.7em; }
 
+strong {
+  font-weight: bolder; }
+
+em {
+  font-style: italic; }
+
 .container {
   background-color: seashell; }
 
@@ -148,8 +154,8 @@ a:hover {
 header {
   position: fixed;
   z-index: 1;
-  width: 95vw;
-  margin: -8px 40px 0 10px;
+  width: 98vw;
+  margin: -8px 40px 0 -17px;
   padding: 30px 20px 10px 20px;
   border-bottom: 1px solid grey;
   background-color: white; }
@@ -184,6 +190,10 @@ nav {
   width: 100%; }
 
 @media screen and (max-width: 600px) {
+  header {
+    width: 95vw;
+    margin: -8px 40px 0 4px; }
+
   .fa-linkedin-in:before {
     margin: -31px; }
 
@@ -197,7 +207,17 @@ nav {
     display: none; }
 
   .menu {
-    margin-right: 19px; } }
+    margin-right: 13px; } }
+@media screen and (max-width: 425px) {
+  header {
+    width: 94vw;
+    margin: -8px 40px 0 -3px; }
+
+  .social {
+    margin-left: -2%; }
+
+  .menu {
+    margin-right: 0; } }
 /* Conteneur principal */
 .hero-overlay-image {
   position: relative;
@@ -246,9 +266,19 @@ nav {
     width: 100%;
     height: auto;
     padding: 10px; } }
+@media screen and (max-width: 1440px) {
+  .hero-image {
+    height: 98%; } }
+@media screen and (max-width: 1024px) {
+  .hero-image {
+    height: 96%; } }
 @media screen and (max-width: 600px) {
   .hero-image {
-    width: 129%;
+    width: 120%;
+    height: 95%; } }
+@media screen and (max-width: 375px) {
+  .hero-image {
+    width: 125%;
     height: 95%; } }
 .resume {
   color: white;
@@ -368,6 +398,9 @@ nav {
   overflow: auto;
   font-size: 0.9em; }
 
+@media screen and (max-width: 1024px) {
+  .skill-box {
+    height: 22vw; } }
 @media screen and (max-width: 768px) {
   .skill-box {
     height: 90%; } }
@@ -469,15 +502,20 @@ footer {
 .project-image {
   width: 100%;
   max-width: 500px;
-  height: auto;
-  opacity: .7; }
+  height: auto; }
+
+.big-project-title {
+  margin-top: 6px;
+  color: dimgray;
+  font-family: 'Poiret One'; }
 
 .project-text-container {
+  color: #582209;
   background-color: seashell;
-  font-family: 'Lato';
+  font-family: 'Roboto';
   line-height: 1.2em; }
 
 .project-image:hover {
-  opacity: .5; }
+  opacity: .8; }
 
 /*# sourceMappingURL=main.css.map */

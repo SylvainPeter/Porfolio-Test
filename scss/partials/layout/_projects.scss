@@ -9,16 +9,22 @@
     width: 100%;
     max-width: 500px;
     height: auto;
-    opacity: .7;
+}
+
+.big-project-title {
+    margin-top: 6px;
+    color: dimgray;
+    font-family: 'Poiret One';
 }
 
 .project-text-container {
+    color: #582209;
     background-color: $background-color2;
-    font-family: 'Lato';
+    font-family: 'Roboto';
     line-height: 1.2em;
 }
 
 // Effet au survol de l'image
 .project-image:hover {
-    opacity: .5;
+    opacity: .8;
 }

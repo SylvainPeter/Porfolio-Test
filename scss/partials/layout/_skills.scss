@@ -88,11 +88,19 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+    .skill-box {
+        height: 22vw;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .skill-box {
         height: 90%;
     }
 
-
 }
+
+
+   

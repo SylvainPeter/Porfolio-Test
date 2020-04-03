@@ -96,7 +96,7 @@ footer {
   padding: 0 10px 0 10px;
   grid-gap: 5px;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 100vh;
+  grid-template-rows: auto;
   grid-template-areas: 'project-image-container project-text-container'; }
 
 .project-image-container {
@@ -282,14 +282,14 @@ nav {
     height: 95%; } }
 .resume {
   color: white;
-  background-color: #b3b0e6; }
+  background-color: #B3B191; }
 
 .resume-text {
   font-family: "Roboto"; }
 
 .photo {
   display: flex;
-  background-color: #b3b0e6;
+  background-color: #B3B191;
   justify-content: center;
   align-items: center; }
 
@@ -510,6 +510,7 @@ footer {
   font-family: 'Poiret One'; }
 
 .project-text-container {
+  text-align: justify;
   color: #582209;
   background-color: seashell;
   font-family: 'Roboto';

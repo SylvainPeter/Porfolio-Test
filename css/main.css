@@ -285,7 +285,8 @@ nav {
   background-color: #B3B191; }
 
 .resume-text {
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  text-align: justify; }
 
 .photo {
   display: flex;

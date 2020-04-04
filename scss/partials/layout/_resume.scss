@@ -8,6 +8,7 @@
 .resume-text {
     font-family: $font-subtitle;
     text-align: justify;
+    line-height: 108%;
 }
 
 .photo {
@@ -56,5 +57,9 @@
 
     .photo {
         padding: 20px;
+    }
+
+      .resume-text {
+        line-height: 120%;
     }
 }

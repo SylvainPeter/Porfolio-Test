@@ -21,7 +21,7 @@
   display: grid;
   padding: 0 10px 0 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh 100vh auto;
+  grid-template-rows: 100vh auto;
   grid-template-areas: 'hero-overlay-image         hero-overlay-image    hero-overlay-image    hero-overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact-overlay-image    contact-overlay-image      contact-overlay-image        contact-overlay-image' 'footer     footer       footer         footer'; }
 
 .hero-overlay-image {
@@ -286,7 +286,8 @@ nav {
 
 .resume-text {
   font-family: "Roboto";
-  text-align: justify; }
+  text-align: justify;
+  line-height: 108%; }
 
 .photo {
   display: flex;
@@ -325,7 +326,10 @@ nav {
     width: 45vh; }
 
   .photo {
-    padding: 20px; } }
+    padding: 20px; }
+
+  .resume-text {
+    line-height: 120%; } }
 .skills {
   background-color: seashell; }
 
@@ -390,14 +394,16 @@ nav {
   box-shadow: 3px 6px 11px 4px rgba(0, 0, 0, 0.81); }
 
 .skill-subtitle {
-  font-family: "Roboto"; }
+  font-family: "Roboto";
+  line-height: 25px; }
 
 .skill-text {
   font-family: 'Montserrat';
   font-weight: bolder;
   line-height: 25px;
   overflow: auto;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  text-align: justify; }
 
 @media screen and (max-width: 1024px) {
   .skill-box {

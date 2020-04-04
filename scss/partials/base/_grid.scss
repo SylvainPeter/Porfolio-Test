@@ -5,7 +5,7 @@
     padding: 0 10px 0 10px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100vh 100vh auto;
+    grid-template-rows: 100vh auto;
     grid-template-areas: 'hero-overlay-image         hero-overlay-image    hero-overlay-image    hero-overlay-image'
     'resume     resume   photo    photo'
     'skills     skills   skills   skills'

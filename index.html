@@ -8,39 +8,48 @@
 		<!-- Favicon ? -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/main.css">
-		<!-- Animate CDN -->	
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+		<!-- Animate CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 		<!-- FontAwesome CDN -->
 		<script src="https://kit.fontawesome.com/8cb3d4ca6a.js"></script>
-
 	</head>
 	<body>
 		<div id="top"></div>
 		
-		<!-- Barre du haut -->
+		<!-- Barre du haut
 		<header>
-			<div class="flex">
-				<div class="social">
-					<a href="https://github.com/sylvainpeter" title="Github" target="_blank"><i class="fab fa-github"></i></a>
-					<a href="https://www.linkedin.com/in/sylvainpeter" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-					<a href="mailto:sylvain.peter81@gmail.com" title="Mail" target="_blank"><i class="far fa-envelope"></i></a>
-				</div>
-				<div class="logo"><a href="#top"><img src="img/logo2-small.png" class="animated bounce"></a></div>
-				
-					<div class="menu">
-						<div id="accueil"><a href="#top" title="Accueil">Accueil</a></div>
-						<div id="parcours"><a href="#resume" title="Parcours">Parcours</a></div>
-						<div id="compétences"><a href="#skills" title="Compétences">Outils</a></div>
-						<div id="projets"><a href="#portfolio" title="Portfolio">Projets</a></div>
-						<div id="contact1"><a href="#contact" title="Contact">Contact</a></div>
-					</div>
-			</div>
-
+				<div class="flex">
+						<div class="social">
+								<a href="https://github.com/sylvainpeter" title="Github" target="_blank"><i class="fab fa-github"></i></a>
+								<a href="https://www.linkedin.com/in/sylvainpeter" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+								<a href="mailto:sylvain.peter81@gmail.com" title="Mail" target="_blank"><i class="far fa-envelope"></i></a>
+						</div>
+						<div class="logo"><a href="#top"><img src="img/logo2-small.png" class="animated bounce"></a></div>
+						
+							<div class="menu">
+									<div id="accueil"><a href="#top" title="Accueil">Accueil</a></div>
+									<div id="parcours"><a href="#resume" title="Parcours">Parcours</a></div>
+									<div id="compétences"><a href="#skills" title="Compétences">Outils</a></div>
+									<div id="projets"><a href="#portfolio" title="Portfolio">Projets</a></div>
+									<div id="contact1"><a href="#contact" title="Contact">Contact</a></div>
+							</div>
+			</div>  -->
+			<!-- [NAVIGATION BAR] -->
+			<nav id="page-nav">
+				<!-- [THE HAMBURGER] -->
+				<label for="hamburger">&#9776;</label>
+				<input type="checkbox" id="hamburger"/>
+				<!-- [MENU ITEMS] -->
+				<ul>
+					<li><a href="#top"><i class="fas fa-home"></i> Accueil</a></li>
+					<li><a href="#resume"><i class="fas fa-user-circle"></i> Parcours</a></li>
+					<li><a href="#skills"><i class="fas fa-microchip"></i> Compétences</a></li>
+					<li><a href="#portfolio"><i class="fas fa-book"></i> Portfolio</a></li>
+					<li><a href="#contact"><i class="far fa-envelope"></i> Contact</a></li>
+				</ul>
+			</nav>
 		</header>
-
 		<div class="container">
-
 			<!-- Hero -->
 			<div class="hero-overlay-image">
 				<img class="hero-image hero-animation" src="img/hero1.jpg">
@@ -50,33 +59,29 @@
 					<br>Découvrez mon univers</p>
 				</div>
 			</div>
-
 			<!-- A Propos -->
 			<div id="resume" class="resume">
 				<h2>Qui suis-je ?</h2>
 				<br><br>
-				<p class="resume-text">Guitariste et compositeur dans plusieurs groupes de rock, auteur d'un blog musical, d'un roman et d'une pièce de théâtre, magicien amateur... <br>On peut dire que je cultive mon côté bohème et atypique !		  
-				<br><br>Mais en moi sommeille aussi l'âme d'un technicien : ordinateurs et ouvrages pointus font depuis toujours partie intégrante de mon quotidien.
-				<br><br>En août 2019, j'ai décidé de me lancer dans une nouvelle activité professionnelle qui concilierais ma sensibilité artistique et mon goût pour la technologie. Le métier d'Intégrateur Web m'est alors apparu comme une évidence !				
-				<br><br>Après avoir fini avec succès une formation, je me lance dans cette grande aventure avec une soif immense de continuer à me perfectionner dans l'art de créer des sites web modernes et performants.
+				<p class="resume-text">Guitariste et compositeur dans plusieurs groupes de rock, auteur d'un blog musical, d'un roman et d'une pièce de théâtre, magicien amateur... <br>Je cultive mon côté bohème et atypique !
+					<br><br>Mais en moi sommeille aussi l'âme d'un technicien : ordinateurs et ouvrages pointus font depuis toujours partie de mon quotidien.
+					<br><br>En août 2019, j'ai décidé de me lancer dans une nouvelle activité professionnelle qui concilierais ma sensibilité artistique et mon goût pour la technologie. Le métier d'Intégrateur Web m'est apparu comme une évidence !
+					<br><br>Après avoir fini avec succès une formation, je me lance dans cette grande aventure avec une soif immense de me perfectionner dans l'art de créer des sites web modernes et performants.
 				<br><br>"I'm Not Like Everybody Else" comme les chantaient les Kinks... Je ne suis pas comme tout le monde, vous aussi vous êtes unique, et votre site le sera tout autant !</p>
 				<br><br>
 				<div>
-	
+					
 					<a href="CV.html" target="_blank" class="myButton">Mon CV</a>
 					<br><br>
-
 				</div>
 			</div>
 			<div class="photo"><img class="photo-sylvain" src="img/photo-test.jpg"></div>
-
 			<!-- Compétences -->
 			<div id="skills" class="skills">
 				<h2>Ma méthodologie</h2>
 				<br><br>
-				<p class="skill-subtitle">Pour construire votre site web sur mesure, je m'appuie sur une maquette graphique (ou à minima un wireframe) que vous me fournissez au préalable. A partir de là, le travail d'intégration à proprement parler peut commencer ! Dans le délai imparti, je réalise pour vous un site web professionnel, très fiable et maintenable, en me servant des outils suivants :
-			</div>
-
+				<p class="skill-subtitle">Pour construire votre site web sur mesure, je m'appuie sur la maquette graphique (ou à minima le wireframe) que vous me fournissez. A partir de là, je commence le travail d'intégration à proprement parler ! Dans le délai imparti, je réalise pour vous un site web professionnel, fiable et maintenable, en me servant des outils suivants :
+				</div>
 				<!-- HTML -->
 				<div class="skill1">
 					<div class="skill-box">
@@ -85,7 +90,6 @@
 						<p class="skill-text">Je m'assure tout d'abord de bien structurer votre page, notamment en respectant la hiérachie des balises-titres et en incluant les méta-données utiles pour un bon référencement SEO, le tout dans le strict respect des normes W3C.<br><br></p>
 					</div>
 				</div>
-
 				<!-- CSS -->
 				<div class="skill2">
 					<div class="skill-box">
@@ -94,16 +98,14 @@
 						<p class="skill-text">Couleurs, formes, effets divers... La mise en page du site est une étape cruciale, que j'exécute en me servant de la CSS Grid, des flexbox, des animations CSS ou encore de librairies (Animate, etc). C'est la partie que je préfère, car elle demande de la créativité !<br><br></p>
 					</div>
 				</div>
-
 				<!-- Sass -->
 				<div class="skill3">
 					<div class="skill-box">
 						<i class="fab fa-sass skill-icon3"></i>
 						<span class="skill-title">Sass</span><br><br>
-						<p class="skill-text">Pour garder les différentes feuilles de style du projet en ordre et donner des ailes au CSS, rien ne vaut le  préprocesseur Sass. J'ai commencé à me servir de cet outil récemment, et depuis je ne peux plus m'en passer !<br><br></p>
+						<p class="skill-text">Pour garder les différentes feuilles de style du projet en ordre et donner des ailes au CSS, rien ne vaut le  préprocesseur Sass. C'est bien simple, depuis que j'ai commencé à me servir de cet outil, je ne peux plus m'en passer !<br><br></p>
 					</div>
 				</div>
-
 				<!-- Bootstrap -->
 				<div class="skill4">
 					<div class="skill-box">
@@ -112,7 +114,6 @@
 						<p class="skill-text">Bien que je me serve de moins en moins de Bootstrap (à titre personnel je préfère le CSS pur), sachez que je peux tout à fait utiliser le framework développé par Twitter si votre projet le nécessite !<br><br></p>
 					</div>
 				</div>
-
 				<!-- JavaScript -->
 				<div class="skill5">
 					<div class="skill-box">
@@ -121,71 +122,63 @@
 						<p class="skill-text">Ce language de programmation n'est pas ma spécialité, mais je possède les notions nécessaires pour m'en servir, notamment pour la gestion des événements du DOM qui peuvent survenir sur votre page web.<br><br></p>
 					</div>
 				</div>
-
 				<!-- Git -->
 				<div class="skill6">
 					<div class="skill-box">
 						<i class="fab fa-git-alt skill-icon6"></i>
 						<span class="skill-title">Versionning</span><br><br>
-						<p class="skill-text">En toutes circonstances, je prend soin de sauvegarder chaque étape du développement de votre site avec l'outil de versionning Git, que j'utilise conjointement avec GitHub. Grâce à ce tandem de choc, le travail que je réalise ne sera jamais perdu, même si mon ordinateur flambe !<br><br></p>
+						<p class="skill-text">En toutes circonstances, je prend soin de sauvegarder chaque étape du projet avec l'outil de versionning Git, que j'utilise conjointement avec GitHub. Grâce à ce tandem de choc, le travail que je réalise sur votre site ne sera jamais perdu, même si mon ordinateur flambe !<br><br></p>
 					</div>
 				</div>
-
 				<!-- Porfolio -->
 				<div id="portfolio" class="portfolio">
 					<h2>Mes réalisations</h2>
 				</div>
-
 				<!-- Projet 1 -->
 				<div class="project1">
 					<h3 class="project-title">CV</h3>
 					<br><br>
 					<a href="project1.html"><img class="project-image-miniature" src="img/project1-min.jpg"></a>
-	
+					
 					<br><br>
 					<p class="project-text">- Septembre 2019 -
-						<br><br>Intégration d'une maquette de CV, exercice réalisée dans le cadre de ma formation OpenClassrooms.</p>
+					<br><br>Intégration d'une maquette de CV, exercice réalisée dans le cadre de ma formation OpenClassrooms.</p>
 				</div>
-
 				<!-- Projet 2 -->
 				<div class="project2">
 					<h3 class="project-title">OHMYFOOD</h3>
 					<br><br>
-						<a href="project2.html"><img class="project-image-miniature" src="img/project2-min.jpg"></a>
+					<a href="project2.html"><img class="project-image-miniature" src="img/project2-min.jpg"></a>
 					<br><br>
 					<p class="project-text">- Novembre 2019 -
-						<br><br>Intégration du site d'un grand restaurant, exercice réalisée dans le cadre de ma formation OpenClassrooms.</p>
+					<br><br>Intégration du site d'un grand restaurant, exercice réalisée dans le cadre de ma formation OpenClassrooms.</p>
 				</div>
-
 				<!-- Projet 3 -->
 				<div class="project3">
 					<h3 class="project-title">RIFF YOUR LIFE</h3>
 					<br><br>
-				<a href="project3.html"><img class="project-image-miniature" src="img/project3-min.jpg"></a>
-	
+					<a href="project3.html"><img class="project-image-miniature" src="img/project3-min.jpg"></a>
+					
 					<br><br>
 					<p class="project-text">- Janvier 2020 -
 					<br><br>Refonte du webdesign du blog musical dont je m'occupe sur Wordpress.</p>
 				</div>
-
 				<!-- Projet 4 -->
 				<div class="project4">
 					<h3 class="project-title">CE SITE</h3>
 					<br><br>
-				<a href="project4.html"><img class="project-image-miniature" src="img/project4-min.jpg"></a>
-	
+					<a href="project4.html"><img class="project-image-miniature" src="img/project4-min.jpg"></a>
+					
 					<br><br>
 					<p class="project-text">- Mars 2020 -
 					<br><br>Création de ce portfolio pour promouvoir mes activités !</p>
 				</div>
-
 				<!-- Contact -->
-
 				<div class="contact-overlay-image">
-				<img class="contact-image" src="img/contact.jpg" id="contact">
-				<div class="contact-text">
-					<h2 class="contact-title">CONTACTEZ-MOI !</h2>
-					<br><br>
+					<img class="contact-image" src="img/contact.jpg" id="contact">
+					<div class="contact-text">
+						<h2 class="contact-title">CONTACTEZ-MOI !</h2>
+						<br><br>
 					<address><i class="far fa-address-card"></i><br>Sylvain Peter<br>20 rue de l'Empereur<br>45000 ORLEANS</address>
 					<br><br>
 					<div><a href="mailto:sylvain.peter81@gmail.com" title="Mail" target="_blank"><i class="far fa-envelope"></i><br>sylvain.peter81@gmail.com</a></div>
@@ -193,14 +186,12 @@
 					<div><i class="fas fa-phone-square-alt"></i><br>06 XX XX XX XX</div>
 				</div>
 			</div>
-
-				<!-- Footer -->
-				<footer>Ce portfolio a été développé avec CSS Grid.
-					<a href="mailto:sylvain.peter81@gmail.com" target="_blank">© Sylvain Peter.</a>
-				</footer>
-			</div>
-			
-        <script src="js/main.js"></script>
-
-		</body>
-	</html>
+			<!-- Footer -->
+			<footer>Ce portfolio a été développé avec CSS Grid.
+				<a href="mailto:sylvain.peter81@gmail.com" target="_blank">© Sylvain Peter.</a>
+			</footer>
+		</div>
+		
+		<script src="js/main.js"></script>
+	</body>
+</html>

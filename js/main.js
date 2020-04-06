@@ -53,8 +53,8 @@ const a = document.querySelector('.logo');
 
 a.addEventListener ("click", event => {
 	a.classList.add('animated', 'bounce')
-
 	});
+
 a.addEventListener ("animationend", event => {
 	a.classList.remove('animated', 'bounce')
 	});

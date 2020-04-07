@@ -12,19 +12,15 @@
 		<script src="https://kit.fontawesome.com/8cb3d4ca6a.js"></script>
 	</head>
 	<body>
-		<div id="top"></div>
-		
-		<!-- Barre du haut -->
-		<header>
-			<div class="flex">
-				<div class="social">
-					<a href="https://github.com/sylvainpeter" title="Github" target="_blank"><i class="fab fa-github"></i></a>
-					<a href="https://www.linkedin.com/in/sylvainpeter" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-					<a href="mailto:sylvain.peter81@gmail.com" title="Mail" target="_blank"><i class="far fa-envelope"></i></a>
-				</div>
-				<div class="logo-project"><a href="index.html"><img src="img/logo2-small.png"></a></div>
-			</div>
-		</header>
+		<nav id="page-nav">
+			<!-- [THE HAMBURGER] -->
+			<label for="hamburger">&#9776;</label>
+			<input type="checkbox" id="hamburger"/>
+			<!-- [MENU ITEMS] -->
+			<ul>
+				<li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+			</ul>
+		</nav>
 		<!-- Project 1 -->
 		<div class="container-project">
 			<div class="project-image-container">
@@ -37,11 +33,11 @@
 				<p><a href="https://github.com/SylvainPeter/OpenClassrooms-Maquette-CV" target="_blank">VOIR LE GITHUB <i class="fas fa-external-link-alt"></i></a></p>
 				<br><br>
 				<p>Pour le premier exercice de ma formation OpenClassrooms, j'ai du intégrer la maquette d'un CV avec une mise en page sur deux colonnes.
-				<br><br>Pour ce faire, j'avais la possibilité d'utiliser un framework : j'ai choisi de me servir de <strong>Bootstrap 4</strong>, principalement pour profiter de son système de Grid. Si c'était à refaire, j'utiliserais plutôt la CSS Grid, c'est bien plus simple !
-				<br><br>Le projet m'a notamment permis de me familiariser avec les <em>flexbox</em> et l'importation d'icônes 
-				<strong>Font Awesome</strong>.
-				<br><br>J'ai géré toutes les couleurs avec des <em>variables</em> CSS (dorénavent j'utilise plutôt les variables SASS).
-				<br><br>Enfin, j'ai utilisé des <em>media queries</em> pour rendre le site <strong>Responsive</strong>.
+					<br><br>Pour ce faire, j'avais la possibilité d'utiliser un framework : j'ai choisi de me servir de <strong>Bootstrap 4</strong>, principalement pour profiter de son système de Grid. Si c'était à refaire, j'utiliserais plutôt la CSS Grid, c'est bien plus simple !
+					<br><br>Le projet m'a notamment permis de me familiariser avec les <em>flexbox</em> et l'importation d'icônes
+					<strong>Font Awesome</strong>.
+					<br><br>J'ai géré toutes les couleurs avec des <em>variables</em> CSS (dorénavent j'utilise plutôt les variables SASS).
+					<br><br>Enfin, j'ai utilisé des <em>media queries</em> pour rendre le site <strong>Responsive</strong>.
 				</p>
 			</div>
 		</div>

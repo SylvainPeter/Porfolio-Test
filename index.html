@@ -16,24 +16,6 @@
 	<body>
 		<div id="top"></div>
 		
-		<!-- Barre du haut
-		<header>
-				<div class="flex">
-						<div class="social">
-								<a href="https://github.com/sylvainpeter" title="Github" target="_blank"><i class="fab fa-github"></i></a>
-								<a href="https://www.linkedin.com/in/sylvainpeter" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-								<a href="mailto:sylvain.peter81@gmail.com" title="Mail" target="_blank"><i class="far fa-envelope"></i></a>
-						</div>
-						<div class="logo"><a href="#top"><img src="img/logo2-small.png" class="animated bounce"></a></div>
-						
-							<div class="menu">
-									<div id="accueil"><a href="#top" title="Accueil">Accueil</a></div>
-									<div id="parcours"><a href="#resume" title="Parcours">Parcours</a></div>
-									<div id="compétences"><a href="#skills" title="Compétences">Outils</a></div>
-									<div id="projets"><a href="#portfolio" title="Portfolio">Projets</a></div>
-									<div id="contact1"><a href="#contact" title="Contact">Contact</a></div>
-							</div>
-			</div>  -->
 			<!-- [NAVIGATION BAR] -->
 			<nav id="page-nav">
 				<!-- [THE HAMBURGER] -->
@@ -41,7 +23,6 @@
 				<input type="checkbox" id="hamburger"/>
 				<!-- [MENU ITEMS] -->
 				<ul>
-					<li><a href="#top"><i class="fas fa-home"></i> Accueil</a></li>
 					<li><a href="#resume"><i class="fas fa-user-circle"></i> Parcours</a></li>
 					<li><a href="#skills"><i class="fas fa-microchip"></i> Compétences</a></li>
 					<li><a href="#portfolio"><i class="fas fa-book"></i> Portfolio</a></li>
@@ -85,7 +66,7 @@
 				<!-- HTML -->
 				<div class="skill1">
 					<div class="skill-box">
-						<i class="fab fa-html5 skill-icon1"></i>
+						<i class="fab fa-html5 skill-icon1" id="html5"></i>
 						<span class="skill-title">HTML5</span><br><br>
 						<p class="skill-text">Je m'assure tout d'abord de bien structurer votre page, notamment en respectant la hiérachie des balises-titres et en incluant les méta-données utiles pour un bon référencement SEO, le tout dans le strict respect des normes W3C.<br><br></p>
 					</div>
@@ -93,7 +74,7 @@
 				<!-- CSS -->
 				<div class="skill2">
 					<div class="skill-box">
-						<i class="fab fa-css3-alt skill-icon2"></i>
+						<i class="fab fa-css3-alt skill-icon2" id="css3"></i>
 						<span class="skill-title">CSS3</span><br><br>
 						<p class="skill-text">Couleurs, formes, effets divers... La mise en page du site est une étape cruciale, que j'exécute en me servant de la CSS Grid, des flexbox, des animations CSS ou encore de librairies (Animate, etc). C'est la partie que je préfère, car elle demande de la créativité !<br><br></p>
 					</div>
@@ -101,7 +82,7 @@
 				<!-- Sass -->
 				<div class="skill3">
 					<div class="skill-box">
-						<i class="fab fa-sass skill-icon3"></i>
+						<i class="fab fa-sass skill-icon3" id="sass"></i>
 						<span class="skill-title">Sass</span><br><br>
 						<p class="skill-text">Pour garder les différentes feuilles de style du projet en ordre et donner des ailes au CSS, rien ne vaut le  préprocesseur Sass. C'est bien simple, depuis que j'ai commencé à me servir de cet outil, je ne peux plus m'en passer !<br><br></p>
 					</div>
@@ -109,7 +90,7 @@
 				<!-- Bootstrap -->
 				<div class="skill4">
 					<div class="skill-box">
-						<i class="fab fa-bootstrap skill-icon4"></i>
+						<i class="fab fa-bootstrap skill-icon4" id="bootstrap4"></i>
 						<span class="skill-title">Bootstrap 4</span><br><br>
 						<p class="skill-text">Bien que je me serve de moins en moins de Bootstrap (à titre personnel je préfère le CSS pur), sachez que je peux tout à fait utiliser le framework développé par Twitter si votre projet le nécessite !<br><br></p>
 					</div>
@@ -117,7 +98,7 @@
 				<!-- JavaScript -->
 				<div class="skill5">
 					<div class="skill-box">
-						<i class="fab fa-js skill-icon5"></i>
+						<i class="fab fa-js skill-icon5" id="javascript"></i>
 						<span class="skill-title">JavaScript</span><br><br>
 						<p class="skill-text">Ce language de programmation n'est pas ma spécialité, mais je possède les notions nécessaires pour m'en servir, notamment pour la gestion des événements du DOM qui peuvent survenir sur votre page web.<br><br></p>
 					</div>
@@ -125,7 +106,7 @@
 				<!-- Git -->
 				<div class="skill6">
 					<div class="skill-box">
-						<i class="fab fa-git-alt skill-icon6"></i>
+						<i class="fab fa-git-alt skill-icon6" id="versionning"></i>
 						<span class="skill-title">Versionning</span><br><br>
 						<p class="skill-text">En toutes circonstances, je prend soin de sauvegarder chaque étape du projet avec l'outil de versionning Git, que j'utilise conjointement avec GitHub. Grâce à ce tandem de choc, le travail que je réalise sur votre site ne sera jamais perdu, même si mon ordinateur flambe !<br><br></p>
 					</div>
@@ -179,16 +160,17 @@
 					<div class="contact-text">
 						<h2 class="contact-title">CONTACTEZ-MOI !</h2>
 						<br><br>
-					<address><i class="far fa-address-card"></i><br>Sylvain Peter<br>20 rue de l'Empereur<br>45000 ORLEANS</address>
 					<br><br>
-					<div><a href="mailto:sylvain.peter81@gmail.com" title="Mail" target="_blank"><i class="far fa-envelope"></i><br>sylvain.peter81@gmail.com</a></div>
+					<div><a href="mailto:sylvain.peter81@gmail.com" title="Mail" target="_blank" class="link-color2"><i class="far fa-envelope"></i><br>sylvain.peter81@gmail.com</a></div>
 					<br><br>
-					<div><i class="fas fa-phone-square-alt"></i><br>06 XX XX XX XX</div>
+					<div><a href="tel:0625518856" title="Téléphone" target="_blank" class="link-color2"><i class="fas fa-phone-square-alt"></i><br>06 25 51 88 56</div>
+					<br><br>
+					<a href="https://www.linkedin.com/in/sylvainpeter" title="Linkedin" target="_blank" class="link-color2"><i class="fab fa-linkedin-in"></i><br>linkedin.com/in/sylvainpeter</a>
 				</div>
 			</div>
 			<!-- Footer -->
-			<footer>Ce portfolio a été développé avec CSS Grid.
-				<a href="mailto:sylvain.peter81@gmail.com" target="_blank">© Sylvain Peter.</a>
+			<footer>
+				<a href="mailto:sylvain.peter81@gmail.com" target="_blank">© Sylvain Peter, 20 rue de l'Empereur, 45000 Orléans</a>
 			</footer>
 		</div>
 		

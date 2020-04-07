@@ -251,7 +251,6 @@ nav {
 /* [ON BIG SCREEN] */
 /* Wrapper */
 #page-nav {
-  position: sticky;
   z-index: 1;
   top: 0;
   width: 100%;
@@ -529,7 +528,9 @@ nav {
   font-family: 'Roboto'; }
 
 .project-text {
-  color: #4a4a4a; }
+  color: #4a4a4a;
+  font-family: 'Roboto';
+  font-size: .9em; }
 
 .project-image-miniature {
   width: 100%;
@@ -569,6 +570,9 @@ nav {
 
 .contact-title {
   margin-top: 80px; }
+
+.link-color2 {
+  color: white; }
 
 @media screen and (max-width: 768px) {
   .contact-text {

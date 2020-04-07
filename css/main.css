@@ -20,8 +20,9 @@
 .container {
   display: grid;
   padding: 0 10px 0 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh auto;
+  background-color: seashell;
+  /*   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100vh auto; */
   grid-template-areas: 'hero-overlay-image         hero-overlay-image    hero-overlay-image    hero-overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact-overlay-image    contact-overlay-image      contact-overlay-image        contact-overlay-image' 'footer     footer       footer         footer'; }
 
 .hero-overlay-image {
@@ -69,23 +70,23 @@
 
 .project1 {
   grid-area: project1;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 0px 20px 0px; }
 
 .project2 {
   grid-area: project2;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 0px 20px 0px; }
 
 .project3 {
   grid-area: project3;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 0px 20px 0px; }
 
 .project4 {
   grid-area: project4;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 0px 20px 0px; }
 
 .contact-overlay-image {
   grid-area: contact-overlay-image;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 0px 20px 0px; }
 
 footer {
   padding: 10px;
@@ -101,11 +102,11 @@ footer {
 
 .project-image-container {
   grid-area: project-image-container;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 0px 20px 0px; }
 
 .project-text-container {
   grid-area: project-text-container;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 0px 20px 0px; }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -120,9 +121,12 @@ footer {
     padding: 0 10px 0 10px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "project-image-container" "\a     project-text-container"; } }
+    grid-template-areas: 'project-image-container' 'project-text-container'; } }
 html {
   font-size: calc(.9em + .3vw); }
+
+body {
+  margin: 0 auto; }
 
 h1 {
   font-size: 2.5em;
@@ -140,9 +144,6 @@ strong {
 
 em {
   font-style: italic; }
-
-.container {
-  background-color: seashell; }
 
 a {
   text-decoration: none;
@@ -253,7 +254,7 @@ nav {
 #page-nav {
   z-index: 1;
   top: 0;
-  width: 100%;
+  width: 98%;
   padding: 10px;
   border-bottom: 1px solid grey;
   background: white;
@@ -311,9 +312,9 @@ nav {
 /* Conteneur principal */
 .hero-overlay-image {
   position: relative;
-  top: 66px;
-  width: 78%;
-  height: 88%;
+  /*   top: 66px;
+     width: 78%;
+     height: 88%; */
   margin: 0 auto; }
 
 /* Image originale */
@@ -353,7 +354,7 @@ nav {
     margin-left: -33px; }
 
   div.hero-text {
-    width: 100%;
+    width: 78%;
     height: auto;
     padding: 10px; } }
 @media screen and (max-width: 1440px) {
@@ -364,7 +365,7 @@ nav {
     height: 96%; } }
 @media screen and (max-width: 600px) {
   .hero-image {
-    width: 120%;
+    width: 108%;
     height: 95%; } }
 @media screen and (max-width: 375px) {
   .hero-image {
@@ -375,8 +376,8 @@ nav {
   background-color: #B3B191; }
 
 .resume-text {
-  font-family: "Roboto";
   text-align: justify;
+  font-family: "Roboto";
   line-height: 108%; }
 
 .photo {
@@ -393,6 +394,7 @@ nav {
   display: inline-block;
   padding: 8px 25px;
   cursor: pointer;
+  transition: all ease 200ms;
   text-decoration: none;
   color: #3a8a9e;
   border: 1px solid #d6bcd6;
@@ -404,6 +406,7 @@ nav {
   font-family: Arial; }
 
 .myButton:hover {
+  transform: scale(1.05);
   background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
   background-color: #bab1ba; }
 

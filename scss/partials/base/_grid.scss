@@ -3,9 +3,10 @@
 .container {
     display: grid;
     padding: 0 10px 0 10px;
+    background-color: $background-color2;
+    /*   grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100vh auto; */
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100vh auto;
     grid-template-areas: 'hero-overlay-image         hero-overlay-image    hero-overlay-image    hero-overlay-image'
     'resume     resume   photo    photo'
     'skills     skills   skills   skills'
@@ -26,49 +27,49 @@
 
 .resume {
     grid-area: resume;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 
 .photo {
     grid-area: photo;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 
 .skills {
     grid-area: skills;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 
 .skill1 {
     grid-area: skill1;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 
 .skill2 {
     grid-area: skill2;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 
 .skill3 {
     grid-area: skill3;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 .skill4 {
     grid-area: skill4;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 .skill5 {
     grid-area: skill5;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 .skill6 {
     grid-area: skill6;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 
 .portfolio {
     grid-area: portfolio;
-    @include GRID-PADDING;
+    @include INNER-PADDING;
 }
 
 .project1 {
@@ -161,9 +162,6 @@ footer {
 
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 'project-image-container' '
-    project-text-container';
+        grid-template-areas: 'project-image-container' 'project-text-container';
     }
 }
-
-

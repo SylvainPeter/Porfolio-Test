@@ -1,6 +1,11 @@
 @mixin GRID-PADDING {
+    padding: 80px 0px 20px 0px;
+}
+
+@mixin INNER-PADDING {
     padding: 80px 20px 20px 20px;
 }
+
 
 @mixin SKILL-ICON {
     margin-right: 10px;

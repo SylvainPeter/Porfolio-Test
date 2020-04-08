@@ -19,7 +19,6 @@
     filter: hue-rotate(0deg); } }
 .container {
   display: grid;
-  padding: 0 10px 0 10px;
   background-color: seashell;
   /*   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100vh auto; */
@@ -30,43 +29,43 @@
 
 .resume {
   grid-area: resume;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .photo {
   grid-area: photo;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .skills {
   grid-area: skills;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .skill1 {
   grid-area: skill1;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .skill2 {
   grid-area: skill2;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .skill3 {
   grid-area: skill3;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .skill4 {
   grid-area: skill4;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .skill5 {
   grid-area: skill5;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .skill6 {
   grid-area: skill6;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .portfolio {
   grid-area: portfolio;
-  padding: 80px 20px 20px 20px; }
+  padding: 80px 30px 20px 30px; }
 
 .project1 {
   grid-area: project1;
@@ -94,7 +93,6 @@ footer {
 
 .container-project {
   display: grid;
-  padding: 0 10px 0 10px;
   grid-gap: 5px;
   grid-template-columns: 60% 40%;
   grid-template-rows: auto;
@@ -111,14 +109,12 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     display: grid;
-    padding: 0 10px 0 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 100vh auto auto auto auto auto auto auto auto auto auto auto auto auto auto 110vh auto;
     grid-template-areas: 'hero-overlay-image ' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'portfolio' 'project1' 'project2' 'project3' 'project4' 'contact-overlay-image ' 'footer'; }
 
   .container-project {
     display: grid;
-    padding: 0 10px 0 10px;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: 'project-image-container' 'project-text-container'; } }
@@ -254,7 +250,7 @@ nav {
 #page-nav {
   z-index: 1;
   top: 0;
-  width: 98%;
+  width: 98.5%;
   padding: 10px;
   border-bottom: 1px solid grey;
   background: white;
@@ -309,6 +305,12 @@ nav {
 
   #page-nav input:checked ~ ul {
     display: block; } }
+@media screen and (max-width: 425) {
+  #page-nav {
+    width: 95%; } }
+@media screen and (max-width: 375px) {
+  #page-nav {
+    width: 93%; } }
 /* Conteneur principal */
 .hero-overlay-image {
   position: relative;
@@ -359,18 +361,24 @@ nav {
     padding: 10px; } }
 @media screen and (max-width: 1440px) {
   .hero-image {
-    height: 98%; } }
+    height: 98%;
+    width: 100%;
+    margin-right: 105px; } }
 @media screen and (max-width: 1024px) {
   .hero-image {
-    height: 96%; } }
+    height: 105%; } }
+@media screen and (max-width: 768px) {
+  .hero-image {
+    width: 105%;
+    height: 100%; } }
 @media screen and (max-width: 600px) {
   .hero-image {
     width: 108%;
-    height: 95%; } }
+    height: 100%; } }
 @media screen and (max-width: 375px) {
   .hero-image {
-    width: 125%;
-    height: 95%; } }
+    width: 110%;
+    height: 100%; } }
 .resume {
   color: white;
   background-color: #B3B191; }
@@ -536,7 +544,7 @@ nav {
   font-size: .9em; }
 
 .project-image-miniature {
-  width: 100%;
+  width: 90%;
   max-width: 450px;
   height: auto;
   transition: all ease 200ms; }
@@ -588,6 +596,7 @@ nav {
     margin-top: 40px; }
 
   .contact-image {
+    width: 106%;
     height: 100%; } }
 footer {
   z-index: 1;

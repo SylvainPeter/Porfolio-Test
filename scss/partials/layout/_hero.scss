@@ -62,25 +62,35 @@
 @media screen and (max-width: 1440px) {
     .hero-image {
         height: 98%;
+        width: 100%;
+        margin-right: 105px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .hero-image {
-        height: 96%;
+        height: 105%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        width: 105%;
+        height: 100%;
+
     }
 }
 
 @media screen and (max-width: 600px) {
     .hero-image {
         width: 108%;
-        height: 95%;
+        height: 100%;
     }
 }
 
 @media screen and (max-width: 375px) {
     .hero-image {
-        width: 125%;
-        height: 95%;
+        width: 110%;
+        height: 100%;
     }
 }

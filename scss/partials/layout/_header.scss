@@ -102,7 +102,7 @@ nav {
 
     z-index: 1;
     top: 0;
-    width: 98%;
+    width: 98.5%;
     padding: 10px;
     border-bottom: 1px solid grey;
     background: white;
@@ -166,3 +166,19 @@ nav {
         display: block;
     }
 }
+
+@media screen and (max-width: 425) {
+
+  #page-nav {
+    width: 95%;
+  }  
+}
+
+@media screen and (max-width: 375px) {
+
+  #page-nav {
+    width: 93%;
+  }  
+}
+
+

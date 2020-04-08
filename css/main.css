@@ -94,17 +94,11 @@ footer {
 .container-project {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: auto;
+  grid-template-columns: 55% 45%;
   grid-template-areas: 'project-image-container project-text-container'; }
 
-.project-image-container {
-  grid-area: project-image-container;
-  padding: 80px 0px 20px 0px; }
-
 .project-text-container {
-  grid-area: project-text-container;
-  padding: 80px 0px 20px 0px; }
+  grid-area: project-text-container; }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -247,7 +241,7 @@ nav {
 */
 /* [ON BIG SCREEN] */
 /* Wrapper */
-#page-nav {
+#page-nav, #home-nav {
   z-index: 1;
   top: 0;
   width: 98.5%;
@@ -257,33 +251,42 @@ nav {
   font-family: 'Roboto';
   font-size: .8em; }
 
+#home-nav {
+  padding: 20px; }
+
 /* Hide Hamburger */
-#page-nav label,
+#page-nav label, #home-nav label,
 #hamburger {
   display: none; }
 
 /* Menu Items */
-#page-nav ul {
+#page-nav ul, #home-nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-#page-nav ul li {
+#page-nav ul li, #home-nav ul li {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px; }
 
-#page-nav ul li a {
+#page-nav ul li a, #home-nav ul li a {
   text-decoration: none;
   color: gray; }
 
-#page-nav ul li a:hover {
+#page-nav ul li a:hover, #home-nav ul li a:hover {
   color: mediumaquamarine; }
 
 /* [ON SMALL SCREENS] */
+@media screen and (max-width: 1024px) {
+  #page-nav, #home-nav {
+    width: 98%; } }
 @media screen and (max-width: 768px) {
+  #page-nav, #home-nav {
+    width: 97%; }
+
   /* Show Hamburger */
-  #page-nav label {
+  #page-nav label, #home-nav label {
     display: inline-block;
     padding: 10px;
     color: white;
@@ -292,31 +295,31 @@ nav {
     font-style: normal; }
 
   /* Break down menu items into vertical */
-  #page-nav ul li {
+  #page-nav ul li, #home-nav ul li {
     display: block;
     position: static; }
 
-  #page-nav ul li {
+  #page-nav ul li, #home-nav ul li {
     border-top: 1px solid #333; }
 
   /* Toggle show/hide menu on checkbox click */
-  #page-nav ul {
+  #page-nav ul, #home-nav ul {
     display: none; }
 
-  #page-nav input:checked ~ ul {
+  #page-nav input:checked ~ ul, #home-nav input:checked ~ ul {
     display: block; } }
 @media screen and (max-width: 425) {
-  #page-nav {
+  #page-nav, #home-nav {
     width: 95%; } }
 @media screen and (max-width: 375px) {
-  #page-nav {
+  #page-nav, #home-nav {
     width: 93%; } }
 /* Conteneur principal */
 .hero-overlay-image {
   position: relative;
   /*   top: 66px;
-     width: 78%;
-     height: 88%; */
+  width: 78%;
+  height: 88%; */
   margin: 0 auto; }
 
 /* Image originale */
@@ -330,16 +333,16 @@ nav {
 .hero-text {
   overflow: hidden;
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   width: 50vw;
-  height: 50%;
+  height: 34%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
   border: 5px solid white;
   text-shadow: 2px 2px 2px #000;
-  line-height: 3rem; }
+  line-height: 4rem; }
 
 .hero-subtitle {
   font-size: 1.3em; }
@@ -361,8 +364,8 @@ nav {
     padding: 10px; } }
 @media screen and (max-width: 1440px) {
   .hero-image {
-    height: 98%;
     width: 100%;
+    height: 98%;
     margin-right: 105px; } }
 @media screen and (max-width: 1024px) {
   .hero-image {
@@ -562,7 +565,7 @@ nav {
 /* Image originale */
 .contact-image {
   display: block;
-  width: 100%; }
+  width: 101%; }
 
 /* Texte original */
 .contact-text {
@@ -596,7 +599,7 @@ nav {
     margin-top: 40px; }
 
   .contact-image {
-    width: 106%;
+    width: 102%;
     height: 100%; } }
 footer {
   z-index: 1;
@@ -615,7 +618,7 @@ footer {
 
 .project-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 580px;
   height: auto; }
 
 .big-project-title {
@@ -632,5 +635,18 @@ footer {
 
 .project-image:hover {
   opacity: .8; }
+
+.project-image-container {
+  padding: 30px 20px 20px 20px; }
+
+.project-text-container {
+  padding: 50px 30px 20px 30px; }
+
+@media screen and (max-width: 768px) {
+  .project-image-container {
+    padding: 50px 20px 20px 20px; }
+
+  .project-text-container {
+    padding: 60px 30px 20px 30px; } }
 
 /*# sourceMappingURL=main.css.map */

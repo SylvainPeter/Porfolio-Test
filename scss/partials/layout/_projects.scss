@@ -7,7 +7,7 @@
 
 .project-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 580px;
     height: auto;
 }
 
@@ -28,4 +28,22 @@
 // Effet au survol de l'image
 .project-image:hover {
     opacity: .8;
+}
+
+.project-image-container {
+    padding: 30px 20px 20px 20px;
+}
+
+.project-text-container {
+    padding: 50px 30px 20px 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .project-image-container {
+        padding: 50px 20px 20px 20px;
+    }
+    .project-text-container {
+        padding: 60px 30px 20px 30px;
+    }
 }

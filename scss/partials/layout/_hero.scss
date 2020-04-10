@@ -38,26 +38,6 @@
 
 
 
-@media screen and (max-width: 768px) {
-    .hero-text {
-        top: 47%;
-        height: 75%;
-        line-height: 2rem;
-    }
-
-    .hero-image {
-        width: 112%;
-        height: auto;
-        margin-left: -33px;
-    }
-
-    div.hero-text {
-        width: 78%;
-        height: auto;
-        padding: 10px;
-    }
-}
-
 
 @media screen and (max-width: 1440px) {
     .hero-image {
@@ -74,9 +54,27 @@
 }
 
 @media screen and (max-width: 768px) {
+    .hero-text {
+        top: 47%;
+        height: 75%;
+        line-height: 2rem;
+    }
+
     .hero-image {
-        width: 105%;
-        height: 100%;
+        width: 104%;
+        height: auto;
+        margin-left: -33px;
+    }
+
+    div.hero-text {
+        width: 62%;
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.3em;
     }
 }
 

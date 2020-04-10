@@ -9,16 +9,16 @@
 .contact-image {
     display: block;
     width: 101%;
+    height: 111%;
 }
 
 /* Texte original */
 .contact-text {
     position: absolute;
-    top: 66%;
+    top: 53%;
     left: 50%;
-    width: 56%;
+    width: 40%;
     height: 64%;
-    margin-top: -80px;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
@@ -38,9 +38,10 @@
 
 @media screen and (max-width: 768px) {
     .contact-text {
-        top: 71%;
+        top: 64%;
         width: 65%;
-        height: 55%;
+        height: 69%;
+        margin-left: 15px;
         font-size: .9em;
     }
 
@@ -50,6 +51,22 @@
 
     .contact-image {
         width: 102%;
-        height: 100%;
+        height: 122%;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .contact-image {
+        width: 104%;
+        height: 123%;
+    }
+}
+
+
+@media screen and (max-width: 37px5) {
+    .contact-image {
+        width: 105%;
+        height: 123%;
     }
 }

@@ -6,7 +6,7 @@
     /*   grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100vh auto; */
 
-    grid-template-areas: 'hero-overlay-image         hero-overlay-image    hero-overlay-image    hero-overlay-image'
+    grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1'
     'resume     resume   photo    photo'
     'skills     skills   skills   skills'
     'skill1       skill1     skill2      skill2'
@@ -15,8 +15,12 @@
     'portfolio  portfolio   portfolio   portfolio'
     'project1   project1     project2      project2'
     'project3   project3     project4      project4'
-    'contact-overlay-image    contact-overlay-image      contact-overlay-image        contact-overlay-image'
+    'contact-overlay-image1    contact-overlay-image1     contact-overlay-image1        contact-overlay-image1'
     'footer     footer       footer         footer';
+}
+
+.hero-image1 {
+    grid-area: hero-image1;
 }
 
 .hero-overlay-image {
@@ -91,8 +95,8 @@
 }
 
 
-.contact-overlay-image {
-    grid-area: contact-overlay-image;
+.contact-overlay-image1 {
+    grid-area: contact-overlay-image1;
     @include GRID-PADDING;
 }
 
@@ -123,9 +127,8 @@ footer {
     .container {
         display: grid;
 
-        grid-template-columns: 1fr;
-        grid-template-rows: 100vh auto auto auto auto auto auto auto auto auto auto auto auto auto auto 110vh auto;
-        grid-template-areas: 'hero-overlay-image '
+//      grid-template-columns: 1fr;
+        grid-template-areas: 'hero-image1'
         'resume'
         'photo'
         'skills'
@@ -140,7 +143,7 @@ footer {
         'project2'
         'project3'
         'project4'
-        'contact-overlay-image '
+        'contact-overlay-image1 '
         'footer';
     }
 

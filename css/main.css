@@ -22,7 +22,10 @@
   background-color: seashell;
   /*   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100vh auto; */
-  grid-template-areas: 'hero-overlay-image         hero-overlay-image    hero-overlay-image    hero-overlay-image' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact-overlay-image    contact-overlay-image      contact-overlay-image        contact-overlay-image' 'footer     footer       footer         footer'; }
+  grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact-overlay-image1    contact-overlay-image1     contact-overlay-image1        contact-overlay-image1' 'footer     footer       footer         footer'; }
+
+.hero-image1 {
+  grid-area: hero-image1; }
 
 .hero-overlay-image {
   grid-area: hero-overlay-image; }
@@ -83,8 +86,8 @@
   grid-area: project4;
   padding: 80px 0px 20px 0px; }
 
-.contact-overlay-image {
-  grid-area: contact-overlay-image;
+.contact-overlay-image1 {
+  grid-area: contact-overlay-image1;
   padding: 80px 0px 20px 0px; }
 
 footer {
@@ -103,9 +106,7 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100vh auto auto auto auto auto auto auto auto auto auto auto auto auto auto 110vh auto;
-    grid-template-areas: 'hero-overlay-image ' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'portfolio' 'project1' 'project2' 'project3' 'project4' 'contact-overlay-image ' 'footer'; }
+    grid-template-areas: 'hero-image1' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'portfolio' 'project1' 'project2' 'project3' 'project4' 'contact-overlay-image1 ' 'footer'; }
 
   .container-project {
     display: grid;
@@ -318,74 +319,61 @@ nav {
 @media screen and (max-width: 375px) {
   #page-nav, #home-nav {
     width: 93%; } }
-/* Conteneur principal */
-.hero-overlay-image {
+.hero-image1 {
   position: relative;
-  /*   top: 66px;
-  width: 78%;
-  height: 88%; */
-  margin: 0 auto; }
-
-/* Image originale */
-.hero-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  opacity: .7; }
-
-/* Texte original */
-.hero-text {
+  height: 100vh;
   overflow: hidden;
+  background: url("../img/hero1.jpg") no-repeat center;
+  background-size: cover; }
+
+.container1 {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 50%;
-  width: 50vw;
-  height: 34%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
   text-align: center;
-  color: #fff;
-  border: 5px solid white;
-  text-shadow: 2px 2px 2px #000;
-  line-height: 4rem; }
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase; }
 
-.hero-subtitle {
-  font-size: 1.3em; }
+.container1 h1 {
+  font-size: 72px;
+  letter-spacing: 0.2em;
+  margin: 0; }
 
-@media screen and (max-width: 1440px) {
-  .hero-image {
-    width: 100%;
-    height: 98%;
-    margin-right: 105px; } }
-@media screen and (max-width: 1024px) {
-  .hero-image {
-    height: 105%; } }
-@media screen and (max-width: 768px) {
-  .hero-text {
-    top: 47%;
-    height: 75%;
-    line-height: 2rem; }
+.container1 h1 span {
+  border: 10px solid white;
+  padding: 6px 14px;
+  display: inline-block; }
 
-  .hero-image {
-    width: 104%;
-    height: auto;
-    margin-left: -33px; }
+.des {
+  margin: 20px;
+  display: block;
+  font-size: 26px;
+  text-shadow: 0 0 10px black; }
 
-  div.hero-text {
-    width: 62%;
-    height: auto;
-    margin: 0 auto;
-    padding: 10px; }
+.btn {
+  color: #313131;
+  padding: 10px 24px;
+  font-size: 20px;
+  text-decoration: none;
+  background: #f1f1f1;
+  border-radius: 8px;
+  transition: 0.3s all; }
 
-  h1 {
-    font-size: 2.3em; } }
-@media screen and (max-width: 600px) {
-  .hero-image {
-    width: 108%;
-    height: 100%; } }
-@media screen and (max-width: 375px) {
-  .hero-image {
-    width: 110%;
-    height: 100%; } }
+.btn:hover {
+  opacity: 0.8; }
+
+@media screen and (max-width: 425px) {
+  .container1 h1 {
+    font-size: 42px; }
+
+  .container1 h1 span {
+    padding: 34px 14px; }
+
+  .des {
+    font-size: 22px; } }
 .resume {
   color: white;
   background-color: #B3B191; }
@@ -431,7 +419,8 @@ nav {
 
 @media screen and (max-width: 768px) {
   .photo-sylvain {
-    width: 45vh; }
+    width: 45vh;
+    padding-bottom: 40px; }
 
   .photo {
     padding: 20px; }
@@ -561,60 +550,46 @@ nav {
   transform: scale(1.05);
   opacity: .9; }
 
-.contact-overlay-image {
+.contact-overlay-image1 {
+  overflow: hidden;
   position: relative;
-  top: -70px;
-  left: -20px;
-  width: 100%; }
+  height: 500px;
+  background: url("../img/contact.jpg") no-repeat center;
+  background-size: cover; }
 
-/* Image originale */
-.contact-image {
-  display: block;
-  width: 101%;
-  height: 111%; }
-
-/* Texte original */
-.contact-text {
+.container2 {
+  display: inline-block;
+  overflow: hidden;
   position: absolute;
-  top: 53%;
+  top: 50%;
   left: 50%;
-  width: 40%;
-  height: 64%;
+  padding: 6px 14px 50px 14px;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
-  border: 5px solid white;
+  color: white;
+  border: 10px solid white;
   font-family: 'Signika';
-  font-size: 1.1em; }
+  font-weight: 700;
+  line-height: 1.5em; }
 
-.contact-title {
-  margin-top: 80px; }
+.container2 h2 {
+  margin: 0;
+  padding: 44px;
+  letter-spacing: .2em;
+  font-size: 40px;
+  line-height: 1.5em; }
 
 .link-color2 {
   color: white; }
 
-@media screen and (max-width: 768px) {
-  .contact-text {
-    top: 64%;
-    width: 65%;
-    height: 69%;
-    margin-left: 15px;
-    font-size: .9em; }
-
-  .contact-title {
-    margin-top: 40px; }
-
-  .contact-image {
-    width: 102%;
-    height: 122%; } }
 @media screen and (max-width: 425px) {
-  .contact-image {
-    width: 104%;
-    height: 123%; } }
-@media screen and (max-width: 37px5) {
-  .contact-image {
-    width: 105%;
-    height: 123%; } }
+  .container2 {
+    width: 62vw;
+    height: auto; }
+
+  .container2 h2 {
+    font-size: 24px;
+    padding: 44px 9px 44px 9px; } }
 footer {
   z-index: 1;
   text-align: center;

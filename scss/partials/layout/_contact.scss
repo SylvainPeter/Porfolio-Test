@@ -1,72 +1,50 @@
-.contact-overlay-image {
+.contact-overlay-image1 {
+    overflow: hidden;
     position: relative;
-    top: -70px;
-    left: -20px;
-    width: 100%;
+    height: 500px;
+    background: url('../img/contact.jpg') no-repeat center;
+    background-size: cover;
 }
 
-/* Image originale */
-.contact-image {
-    display: block;
-    width: 101%;
-    height: 111%;
-}
-
-/* Texte original */
-.contact-text {
+.container2 {
+    display: inline-block;
+    overflow: hidden;
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 50%;
-    width: 40%;
-    height: 64%;
+    padding: 6px 14px 50px 14px;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
-    border: 5px solid white;
+    color: white;
+    border: 10px solid white;
     font-family: 'Signika';
-    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1.5em;
 }
 
-.contact-title {
-    margin-top: 80px;
+.container2 h2 {
+    margin: 0;
+    padding: 44px;
+    letter-spacing: .2em;
+    font-size: 40px;
+    line-height: 1.5em;
 }
+
 
 .link-color2 {
     color: white;
 }
 
 
-@media screen and (max-width: 768px) {
-    .contact-text {
-        top: 64%;
-        width: 65%;
-        height: 69%;
-        margin-left: 15px;
-        font-size: .9em;
-    }
-
-    .contact-title {
-        margin-top: 40px;
-    }
-
-    .contact-image {
-        width: 102%;
-        height: 122%;
-    }
-}
-
-
 @media screen and (max-width: 425px) {
-    .contact-image {
-        width: 104%;
-        height: 123%;
-    }
+
+.container2 {
+    width:62vw;
+    height: auto;
 }
 
-
-@media screen and (max-width: 37px5) {
-    .contact-image {
-        width: 105%;
-        height: 123%;
-    }
+  .container2 h2 {  
+font-size: 24px;
+    padding: 44px 9px 44px 9px;
+}
 }

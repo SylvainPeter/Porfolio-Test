@@ -246,10 +246,10 @@ nav {
 */
 /* [ON BIG SCREEN] */
 /* Wrapper */
-#page-nav, #home-nav {
+#page-nav {
   z-index: 1;
   top: 0;
-  width: 98.5%;
+  max-width: 100%;
   padding: 10px;
   border-bottom: 1px solid grey;
   background: white;
@@ -257,42 +257,42 @@ nav {
   font-size: .8em; }
 
 #home-nav {
+  z-index: 1;
+  top: 0;
   padding: 20px;
-  width: 97%; }
+  max-width: 100%;
+  border-bottom: 1px solid grey;
+  background: white;
+  font-family: 'Roboto';
+  font-size: .8em; }
 
 /* Hide Hamburger */
-#page-nav label, #home-nav label,
+#page-nav label,
 #hamburger {
   display: none; }
 
 /* Menu Items */
-#page-nav ul, #home-nav ul {
+#page-nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-#page-nav ul li, #home-nav ul li {
+#page-nav ul li {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px; }
 
-#page-nav ul li a, #home-nav ul li a {
+#page-nav ul li a {
   text-decoration: none;
   color: gray; }
 
-#page-nav ul li a:hover, #home-nav ul li a:hover {
+#page-nav ul li a:hover {
   color: mediumaquamarine; }
 
 /* [ON SMALL SCREENS] */
-@media screen and (max-width: 1024px) {
-  #page-nav, #home-nav {
-    width: 98%; } }
 @media screen and (max-width: 768px) {
-  #page-nav, #home-nav {
-    width: 95%; }
-
   /* Show Hamburger */
-  #page-nav label, #home-nav label {
+  #page-nav label {
     display: inline-block;
     padding: 10px;
     color: white;
@@ -301,25 +301,19 @@ nav {
     font-style: normal; }
 
   /* Break down menu items into vertical */
-  #page-nav ul li, #home-nav ul li {
+  #page-nav ul li {
     display: block;
     position: static; }
 
-  #page-nav ul li, #home-nav ul li {
+  #page-nav ul li {
     border-top: 1px solid #333; }
 
   /* Toggle show/hide menu on checkbox click */
-  #page-nav ul, #home-nav ul {
+  #page-nav ul {
     display: none; }
 
-  #page-nav input:checked ~ ul, #home-nav input:checked ~ ul {
+  #page-nav input:checked ~ ul {
     display: block; } }
-@media screen and (max-width: 425) {
-  #page-nav, #home-nav {
-    width: 95%; } }
-@media screen and (max-width: 375px) {
-  #page-nav, #home-nav {
-    width: 93%; } }
 .hero-image1 {
   overflow: hidden;
   position: relative;
@@ -341,7 +335,8 @@ nav {
 .container1 h1 {
   margin: 0;
   letter-spacing: .2em;
-  font-size: 72px; }
+  font-size: 72px;
+  text-shadow: 0 0 10px dimgrey; }
 
 .container1 h1 span {
   display: inline-block;
@@ -355,13 +350,17 @@ nav {
   font-size: 26px; }
 
 .btn {
-  padding: 10px 24px;
+  padding: 5px 0;
   transition: .3s all;
-  text-decoration: none;
-  color: #313131;
-  border-radius: 8px;
+  border-radius: 100px;
   background: #f1f1f1;
-  font-size: 20px; }
+  font-size: 18px;
+  width: 200px;
+  margin: 0 auto; }
+
+.btn a {
+  text-decoration: none;
+  color: #313131; }
 
 .btn:hover {
   opacity: .8; }
@@ -391,8 +390,9 @@ nav {
   align-items: center; }
 
 .photo-sylvain {
-  width: 40%;
-  border-radius: 50%; }
+  max-width: 45%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px black; }
 
 .myButton {
   display: inline-block;
@@ -418,12 +418,9 @@ nav {
   position: relative;
   top: 1px; }
 
-@media screen and (max-width: 1024px) {
-  .photo-sylvain {
-    width: 50%; } }
 @media screen and (max-width: 768px) {
   .photo-sylvain {
-    width: 67vh;
+    max-width: 35%;
     margin-bottom: 40px; }
 
   .photo {
@@ -431,9 +428,9 @@ nav {
 
   .resume-text {
     line-height: 120%; } }
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
   .photo-sylvain {
-    width: 50vh;
+    max-width: 55%;
     margin-bottom: 40px; } }
 .skills {
   background-color: seashell; }
@@ -552,6 +549,7 @@ nav {
   width: 90%;
   max-width: 450px;
   height: auto;
+  max-height: 208px;
   transition: all ease 200ms; }
 
 .project-image-miniature:hover {
@@ -575,7 +573,7 @@ nav {
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  border: 10px solid white;
+  border: 8px solid white;
   font-family: 'Signika';
   font-weight: 700;
   line-height: 1.5em; }

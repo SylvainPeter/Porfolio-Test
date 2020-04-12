@@ -55,6 +55,7 @@ const c = document.querySelector('#sass');
 const d = document.querySelector('#bootstrap4');
 const e = document.querySelector('#javascript');
 const f = document.querySelector('#versionning');
+const g = document.querySelector('#btn1');
 
 a.addEventListener ("mouseenter", event => {
 	a.classList.add('animated', 'heartBeat')
@@ -103,3 +104,13 @@ f.addEventListener ("mouseenter", event => {
 f.addEventListener ("mouseleave", event => {
 	f.classList.remove('animated', 'heartBeat')
 	});
+
+
+g.addEventListener ("mouseenter", event => {
+	g.classList.add('animated', 'rubberBand')
+	});
+
+g.addEventListener ("mouseleave", event => {
+	g.classList.remove('animated', 'rubberBand')
+	});
+

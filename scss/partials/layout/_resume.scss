@@ -20,8 +20,9 @@
 }
 
 .photo-sylvain {
-    width: 40%;
+    max-width: 45%;
     border-radius: 50%;
+    box-shadow: 0 0 10px black;
 }
 
 .myButton {
@@ -49,15 +50,11 @@
     top: 1px;
 }
 
-@media screen and (max-width: 1024px) {
-    .photo-sylvain {
-        width: 50%;
-    }
-}
+
 
 @media screen and (max-width: 768px) {
     .photo-sylvain {
-        width: 67vh;
+        max-width: 35%;
         margin-bottom: 40px;
     }
 
@@ -70,9 +67,9 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 768px) {
     .photo-sylvain {
-        width: 50vh;
+        max-width: 55%;
         margin-bottom: 40px;
     }
 }

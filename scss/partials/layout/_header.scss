@@ -101,7 +101,7 @@ nav {
 #page-nav {
     z-index: 1;
     top: 0;
-    width: 98.5%;
+    max-width: 100%;
     padding: 10px;
     border-bottom: 1px solid grey;
     background: white;
@@ -110,9 +110,14 @@ nav {
 }
 
 #home-nav {
+    z-index: 1;
+    top: 0;
     padding: 20px;
-    width: 97%;
-    @extend #page-nav;
+    max-width: 100%;
+    border-bottom: 1px solid grey;
+    background: white;
+    font-family: 'Roboto';
+    font-size: .8em;
 }
 
 
@@ -145,16 +150,8 @@ nav {
 /* [ON SMALL SCREENS] */
 
 
-@media screen and (max-width: 1024px) {
-    #page-nav {
-        width: 98%;
-    }
-}
-
 @media screen and (max-width: 768px) {
-    #page-nav {
-        width: 95%;
-    }
+
 
     /* Show Hamburger */
     #page-nav label {
@@ -182,16 +179,7 @@ nav {
     #page-nav input:checked ~ ul {
         display: block;
     }
+
+
 }
 
-@media screen and (max-width: 425) {
-    #page-nav {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    #page-nav {
-        width: 93%;
-    }
-}

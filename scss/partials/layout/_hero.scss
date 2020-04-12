@@ -1,70 +1,69 @@
 .hero-image1 {
-    position: relative;
-    height: 100vh;
     overflow: hidden;
+    position: relative;
+    height: 92vh;
     background: url('../img/hero1.jpg') no-repeat center;
     background-size: cover;
 }
 
 .container1 {
+    overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
     text-align: center;
+    text-transform: uppercase;
     color: white;
     font-weight: 700;
-    text-transform: uppercase;
 }
 
 .container1 h1 {
-    font-size: 72px;
-    letter-spacing: 0.2em;
     margin: 0;
+    letter-spacing: .2em;
+    font-size: 72px;
 }
 
 .container1 h1 span {
-    border: 10px solid white;
-    padding: 6px 14px;
     display: inline-block;
+    padding: 6px 14px;
+    border: 10px solid white;
 }
 
 .des {
-    margin: 20px;
     display: block;
-    font-size: 26px;
+    margin: 20px;
     text-shadow: 0 0 10px black;
+    font-size: 26px;
 }
 
 .btn {
-    color: #313131;
     padding: 10px 24px;
-    font-size: 20px;
+    transition: .3s all;
     text-decoration: none;
-    background: #f1f1f1;
+    color: #313131;
     border-radius: 8px;
-    transition: 0.3s all;
+    background: #f1f1f1;
+    font-size: 20px;
 }
 
 .btn:hover {
-    opacity: 0.8;
+    opacity: .8;
 }
 
 
 
 
 @media screen and (max-width: 425px) {
-
-.container1 h1 {
+    .container1 h1 {
         font-size: 42px;
     }
 
     .container1 h1 span {
-padding: 34px 14px;
-}
+        padding: 34px 14px;
+    }
 
-.des {
-    font-size: 22px;
-}
+    .des {
+        font-size: 22px;
+    }
 }

@@ -53,20 +53,24 @@
 }
 
 .skill3 {
+    padding: 70px 30px 20px 30px;
+
     grid-area: skill3;
-    @include INNER-PADDING;
 }
 .skill4 {
+    padding: 70px 30px 20px 30px;
+
     grid-area: skill4;
-    @include INNER-PADDING;
 }
 .skill5 {
+    padding: 70px 30px 20px 30px;
+
     grid-area: skill5;
-    @include INNER-PADDING;
 }
 .skill6 {
+    padding: 70px 30px 20px 30px;
+
     grid-area: skill6;
-    @include INNER-PADDING;
 }
 
 .portfolio {
@@ -114,7 +118,7 @@ footer {
     display: grid;
 
     grid-gap: 5px;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 54.6% 45%;
     grid-template-areas: 'project-image-container project-text-container';
 }
 
@@ -126,8 +130,8 @@ footer {
 @media screen and (max-width: 768px) {
     .container {
         display: grid;
+        //      grid-template-columns: 1fr;
 
-//      grid-template-columns: 1fr;
         grid-template-areas: 'hero-image1'
         'resume'
         'photo'

@@ -49,12 +49,16 @@
     top: 1px;
 }
 
-
+@media screen and (max-width: 1024px) {
+    .photo-sylvain {
+        width: 50%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .photo-sylvain {
-        width: 45vh;
-        padding-bottom: 40px;
+        width: 67vh;
+        margin-bottom: 40px;
     }
 
     .photo {
@@ -63,5 +67,12 @@
 
     .resume-text {
         line-height: 120%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .photo-sylvain {
+        width: 50vh;
+        margin-bottom: 40px;
     }
 }

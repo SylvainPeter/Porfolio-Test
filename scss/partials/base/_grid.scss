@@ -3,8 +3,6 @@
 .container {
     display: grid;
     background-color: $background-color2;
-    /*   grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100vh auto; */
 
     grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1'
     'resume     resume   photo    photo'
@@ -130,7 +128,6 @@ footer {
 @media screen and (max-width: 768px) {
     .container {
         display: grid;
-        //      grid-template-columns: 1fr;
 
         grid-template-areas: 'hero-image1'
         'resume'

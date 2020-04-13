@@ -25,8 +25,8 @@
 }
 
 .skill-title {
+    font-family: 'Open Sans';
     font-size: 1.5em;
-        font-family: 'Open Sans';
 }
 
 .skill-icon1 {
@@ -81,12 +81,12 @@
 }
 
 .skill-text {
+    overflow: auto;
+    text-align: justify;
     font-family: 'Montserrat';
+    font-size: .9em;
     font-weight: bolder;
     line-height: 25px;
-    overflow: auto;
-    font-size: 0.9em;
-    text-align: justify;
 }
 
 
@@ -101,8 +101,4 @@
     .skill-box {
         height: 90%;
     }
-
 }
-
-
-   

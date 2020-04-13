@@ -20,8 +20,6 @@
 .container {
   display: grid;
   background-color: seashell;
-  /*   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100vh auto; */
   grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact-overlay-image1    contact-overlay-image1     contact-overlay-image1        contact-overlay-image1' 'footer     footer       footer         footer'; }
 
 .hero-image1 {
@@ -147,103 +145,6 @@ a:hover {
   width: 100%;
   height: 600px; }
 
-/* header {
-    position: fixed;
-    z-index: 1;
-    width: 98vw;
-    margin: -8px 40px 0 -17px;
-    padding: 30px 20px 10px 20px;
-    border-bottom: 1px solid grey;
-    background-color: white;
-}
-
-.flex {
-    display: flex;
-
-    justify-content: space-between;
-}
-
-.social {
-    display: flex;
-    width: 6em;
-    margin-left: 2%;
-    padding: 3px;
-    font-size: 1.3em;
-
-    justify-content: space-between;
-}
-
-.logo {
-    margin: -10px 8% 0 20%;
-}
-
-.logo-project {
-    margin: -10px 8% 0 20%;
-}
-
-.menu {
-    display: flex;
-    width: 20em;
-    padding: 3px;
-    font-family: 'Roboto';
-    font-size: .8em;
-
-    justify-content: space-around;
-}
-
-nav {
-    width: 100%;
-}
-
-
-
-@media screen and (max-width: 600px) {
-    header {
-        width: 95vw;
-        margin: -8px 40px 0 4px;
-    }
-
-    .fa-github:before {
-    }
-
-    .fa-linkedin-in:before {
-        margin: -31px;
-    }
-
-
-    .fa-envelope:before {
-        margin: -43px;
-    }
-
-    .social {
-        margin-left: -4%;
-    }
-
-    .logo {
-        display: none;
-    }
-
-    .menu {
-        margin-right: 13px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    header {
-        width: 94vw;
-        margin: -8px 40px 0 -3px;
-    }
-
-    .social {
-        margin-left: -2%;
-    }
-
-    .menu {
-        margin-right: 0;
-    }
-}
-
-*/
 /* [ON BIG SCREEN] */
 /* Wrapper */
 #page-nav {
@@ -259,8 +160,8 @@ nav {
 #home-nav {
   z-index: 1;
   top: 0;
-  padding: 20px;
   max-width: 100%;
+  padding: 20px;
   border-bottom: 1px solid grey;
   background: white;
   font-family: 'Roboto';
@@ -455,8 +356,8 @@ nav {
   background-color: seashell; }
 
 .skill-title {
-  font-size: 1.5em;
-  font-family: 'Open Sans'; }
+  font-family: 'Open Sans';
+  font-size: 1.5em; }
 
 .skill-icon1 {
   color: orange;
@@ -500,12 +401,12 @@ nav {
   line-height: 25px; }
 
 .skill-text {
-  font-family: 'Montserrat';
-  font-weight: bolder;
-  line-height: 25px;
   overflow: auto;
-  font-size: 0.9em;
-  text-align: justify; }
+  text-align: justify;
+  font-family: 'Montserrat';
+  font-size: .9em;
+  font-weight: bolder;
+  line-height: 25px; }
 
 @media screen and (max-width: 1024px) {
   .skill-box {

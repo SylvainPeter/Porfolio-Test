@@ -3,7 +3,7 @@
     background-color: $background-color5;
 }
 
-.resume-text {
+.resume_text {
     text-align: justify;
     font-family: $font-subtitle;
     line-height: 108%;
@@ -23,7 +23,7 @@
     box-shadow: 0 0 10px black;
 }
 
-.myButton {
+.CV_Button {
     display: inline-block;
     padding: 8px 25px;
     cursor: pointer;
@@ -38,12 +38,12 @@
     text-shadow: -1px 0 0 #e1e2ed;
     font-family: Arial;
 }
-.myButton:hover {
+.CV_Button:hover {
     transform: scale(1.05);
     background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
     background-color: #bab1ba;
 }
-.myButton:active {
+.CV_Button:active {
     position: relative;
     top: 1px;
 }
@@ -60,7 +60,7 @@
         padding: 20px;
     }
 
-    .resume-text {
+    .resume_text {
         line-height: 120%;
     }
 }

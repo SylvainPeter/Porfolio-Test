@@ -6,7 +6,7 @@
     background-size: cover;
 }
 
-.container1 {
+.hero_container {
     overflow: hidden;
     position: absolute;
     top: 50%;
@@ -18,27 +18,27 @@
     font-weight: 700;
 }
 
-.container1 h1 {
+.hero_container h1 {
     margin: 0;
     letter-spacing: .2em;
     font-size: 72px;
         text-shadow: 0 0 10px dimgrey;
 }
 
-.container1 h1 span {
+.hero_container h1 span {
     display: inline-block;
     padding: 6px 14px;
     border: 10px solid white;
 }
 
-.des {
+.hero_subtitle {
     display: block;
     margin: 20px;
     text-shadow: 0 0 10px black;
     font-size: 26px;
 }
 
-.btn {
+.hero_btn {
     padding: 5px 0;
     transition: .3s all;
     border-radius: 100px;
@@ -48,25 +48,26 @@
     margin: 0 auto;
 }
 
-.btn a {
+.hero_btn a {
         text-decoration: none;
     color: #313131;
 }
-.btn:hover {
+.hero_btn:hover {
     opacity: .8;
+        transform: scale(1.05);
 }
 
 
 @media screen and (max-width: 425px) {
-    .container1 h1 {
+    .hero_container h1 {
         font-size: 42px;
     }
 
-    .container1 h1 span {
+    .hero_container h1 span {
         padding: 34px 14px;
     }
 
-    .des {
+    .hero_subtitle {
         font-size: 22px;
     }
 }

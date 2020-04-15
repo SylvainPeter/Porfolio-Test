@@ -6,7 +6,7 @@ const c = document.querySelector('#sass');
 const d = document.querySelector('#bootstrap4');
 const e = document.querySelector('#javascript');
 const f = document.querySelector('#versionning');
-const g = document.querySelector('#btn1');
+const g = document.querySelector('.hero_subtitle');
 
 a.addEventListener ("mouseenter", event => {
 	a.classList.add('animated', 'heartBeat')

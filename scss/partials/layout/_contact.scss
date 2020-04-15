@@ -6,7 +6,7 @@
     background-size: cover;
 }
 
-.container2 {
+.contact_container {
     display: inline-block;
     overflow: hidden;
     position: absolute;
@@ -22,7 +22,7 @@
     line-height: 1.5em;
 }
 
-.container2 h2 {
+.contact_container h2 {
     margin: 0;
     padding: 44px;
     letter-spacing: .2em;
@@ -37,12 +37,12 @@
 
 
 @media screen and (max-width: 425px) {
-    .container2 {
+    .contact_container {
         width: 62vw;
         height: auto;
     }
 
-    .container2 h2 {
+    .contact_container h2 {
         padding: 44px 9px 44px 9px;
         font-size: 24px;
     }

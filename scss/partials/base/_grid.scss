@@ -10,6 +10,7 @@
     'skill1       skill1     skill2      skill2'
     'skill3       skill3     skill4      skill4'
     'skill5       skill5     skill6      skill6'
+    'skill7       skill7     skill8      skill8'
     'portfolio  portfolio   portfolio   portfolio'
     'project1   project1     project2      project2'
     'project3   project3     project4      project4'
@@ -51,25 +52,39 @@
 }
 
 .skill3 {
-    padding: 70px 30px 20px 30px;
+    @include INNER-PADDING;
 
     grid-area: skill3;
 }
 .skill4 {
-    padding: 70px 30px 20px 30px;
+    @include INNER-PADDING;
 
     grid-area: skill4;
 }
+
 .skill5 {
-    padding: 70px 30px 20px 30px;
 
     grid-area: skill5;
+        @include INNER-PADDING;
 }
+
 .skill6 {
-    padding: 70px 30px 20px 30px;
 
     grid-area: skill6;
+        @include INNER-PADDING;
 }
+
+.skill7 {
+    padding: 10px 30px 100px 30px;
+
+    grid-area: skill7;
+}
+.skill8 {
+    padding: 10px 30px 100px 30px;
+
+    grid-area: skill8;
+}
+
 
 .portfolio {
     grid-area: portfolio;
@@ -139,6 +154,8 @@ footer {
         'skill4'
         'skill5'
         'skill6'
+        'skill7'
+        'skill8'
         'portfolio'
         'project1'
         'project2'

@@ -17,10 +17,20 @@
     filter: hue-rotate(40deg); }
   100% {
     filter: hue-rotate(0deg); } }
+.blinking {
+  animation: blinkingText 1.5s infinite; }
+
+@keyframes blinkingText {
+  0% {
+    color: white; }
+  50% {
+    color: transparent; }
+  100% {
+    color: white; } }
 .container {
   display: grid;
   background-color: seashell;
-  grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact-overlay-image1    contact-overlay-image1     contact-overlay-image1        contact-overlay-image1' 'footer     footer       footer         footer'; }
+  grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'skill7       skill7     skill8      skill8' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project2      project2' 'project3   project3     project4      project4' 'contact-overlay-image1    contact-overlay-image1     contact-overlay-image1        contact-overlay-image1' 'footer     footer       footer         footer'; }
 
 .hero-image1 {
   grid-area: hero-image1; }
@@ -49,20 +59,28 @@
   padding: 80px 30px 20px 30px; }
 
 .skill3 {
-  padding: 70px 30px 20px 30px;
+  padding: 80px 30px 20px 30px;
   grid-area: skill3; }
 
 .skill4 {
-  padding: 70px 30px 20px 30px;
+  padding: 80px 30px 20px 30px;
   grid-area: skill4; }
 
 .skill5 {
-  padding: 70px 30px 20px 30px;
-  grid-area: skill5; }
+  grid-area: skill5;
+  padding: 80px 30px 20px 30px; }
 
 .skill6 {
-  padding: 70px 30px 20px 30px;
-  grid-area: skill6; }
+  grid-area: skill6;
+  padding: 80px 30px 20px 30px; }
+
+.skill7 {
+  padding: 10px 30px 100px 30px;
+  grid-area: skill7; }
+
+.skill8 {
+  padding: 10px 30px 100px 30px;
+  grid-area: skill8; }
 
 .portfolio {
   grid-area: portfolio;
@@ -104,7 +122,7 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     display: grid;
-    grid-template-areas: 'hero-image1' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'portfolio' 'project1' 'project2' 'project3' 'project4' 'contact-overlay-image1 ' 'footer'; }
+    grid-template-areas: 'hero-image1' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'skill7' 'skill8' 'portfolio' 'project1' 'project2' 'project3' 'project4' 'contact-overlay-image1 ' 'footer'; }
 
   .container-project {
     display: grid;
@@ -358,7 +376,8 @@ a:hover {
 
 .skill-title {
   font-family: 'Open Sans';
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  cursor: pointer; }
 
 .skill-icon1 {
   color: orange;
@@ -386,7 +405,17 @@ a:hover {
   font-size: 2.5em; }
 
 .skill-icon6 {
-  color: red;
+  color: darkcyan;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon7 {
+  color: orangered;
+  margin-right: 10px;
+  font-size: 2.5em; }
+
+.skill-icon8 {
+  color: grey;
   margin-right: 10px;
   font-size: 2.5em; }
 

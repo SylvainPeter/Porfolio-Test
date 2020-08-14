@@ -1,67 +1,82 @@
 /* Animations au survol des éléments du menu */
 
-const a = document.querySelector('#html5');
-const b = document.querySelector('#css3');
-const c = document.querySelector('#sass');
-const d = document.querySelector('#bootstrap4');
-const e = document.querySelector('#javascript');
-const f = document.querySelector('#versionning');
-const g = document.querySelector('.hero_subtitle');
+const html = document.querySelector('#html5');
+const css = document.querySelector('#css3');
+const sass = document.querySelector('#sass');
+const bootstrap = document.querySelector('#bootstrap4');
+const javascript = document.querySelector('#javascript');
+const wordpress = document.querySelector('#wordpress');
+const versionning = document.querySelector('#versionning');
+const audit = document.querySelector('#seo');
+const target1 = document.querySelector('#target1');
+const target2 = document.querySelector('#target2');
+const target3 = document.querySelector('#target3');
+const target4 = document.querySelector('#target4');
+const target5 = document.querySelector('#target5');
+const target6 = document.querySelector('#target6');
+const target7 = document.querySelector('#target7');
+const target8 = document.querySelector('#target8');
 
-a.addEventListener ("mouseenter", event => {
-	a.classList.add('animated', 'heartBeat')
+target1.addEventListener ("mouseenter", event => {
+	html.classList.add('animated', 'heartBeat')
 	});
 
-a.addEventListener ("mouseleave", event => {
-	a.classList.remove('animated', 'heartBeat')
+target1.addEventListener ("mouseleave", event => {
+	html.classList.remove('animated', 'heartBeat')
 	});
 
-b.addEventListener ("mouseenter", event => {
-	b.classList.add('animated', 'heartBeat')
+target2.addEventListener ("mouseenter", event => {
+	css.classList.add('animated', 'heartBeat')
 	});
 
-b.addEventListener ("mouseleave", event => {
-	b.classList.remove('animated', 'heartBeat')
+target2.addEventListener ("mouseleave", event => {
+	css.classList.remove('animated', 'heartBeat')
 	});
 
-c.addEventListener ("mouseenter", event => {
-	c.classList.add('animated', 'heartBeat')
+target3.addEventListener ("mouseenter", event => {
+	sass.classList.add('animated', 'heartBeat')
 	});
 
-c.addEventListener ("mouseleave", event => {
-	c.classList.remove('animated', 'heartBeat')
+target3.addEventListener ("mouseleave", event => {
+	sass.classList.remove('animated', 'heartBeat')
 	});
 
-d.addEventListener ("mouseenter", event => {
-	d.classList.add('animated', 'heartBeat')
+target4.addEventListener ("mouseenter", event => {
+	bootstrap.classList.add('animated', 'heartBeat')
 	});
 
-d.addEventListener ("mouseleave", event => {
-	d.classList.remove('animated', 'heartBeat')
+target4.addEventListener ("mouseleave", event => {
+	bootstrap.classList.remove('animated', 'heartBeat')
 	});
 
-e.addEventListener ("mouseenter", event => {
-	e.classList.add('animated', 'heartBeat')
+target5.addEventListener ("mouseenter", event => {
+	javascript.classList.add('animated', 'heartBeat')
 	});
 
-e.addEventListener ("mouseleave", event => {
-	e.classList.remove('animated', 'heartBeat')
+target5.addEventListener ("mouseleave", event => {
+	javascript.classList.remove('animated', 'heartBeat')
 	});
 
-f.addEventListener ("mouseenter", event => {
-	f.classList.add('animated', 'heartBeat')
+target6.addEventListener ("mouseenter", event => {
+	wordpress.classList.add('animated', 'heartBeat')
 	});
 
-f.addEventListener ("mouseleave", event => {
-	f.classList.remove('animated', 'heartBeat')
+target6.addEventListener ("mouseleave", event => {
+	wordpress.classList.remove('animated', 'heartBeat')
 	});
 
-
-g.addEventListener ("mouseenter", event => {
-	g.classList.add('animated', 'rubberBand')
+target7.addEventListener ("mouseenter", event => {
+	versionning.classList.add('animated', 'heartBeat')
 	});
 
-g.addEventListener ("mouseleave", event => {
-	g.classList.remove('animated', 'rubberBand')
+target7.addEventListener ("mouseleave", event => {
+	versionning.classList.remove('animated', 'heartBeat')
 	});
 
+target8.addEventListener ("mouseenter", event => {
+	seo.classList.add('animated', 'heartBeat')
+	});
+
+target8.addEventListener ("mouseleave", event => {
+	seo.classList.remove('animated', 'heartBeat')
+	});

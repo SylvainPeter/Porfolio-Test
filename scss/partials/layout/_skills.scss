@@ -27,11 +27,11 @@
 .skill-title {
     font-family: 'Open Sans';
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 .skill-icon1 {
     color: orange;
-
     @include SKILL-ICON;
 }
 
@@ -60,7 +60,19 @@
 }
 
 .skill-icon6 {
-    color: red;
+    color: darkcyan;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon7 {
+    color: orangered;
+
+    @include SKILL-ICON;
+}
+
+.skill-icon8 {
+    color: grey;
 
     @include SKILL-ICON;
 }

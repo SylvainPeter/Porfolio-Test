@@ -50,27 +50,27 @@ target4.addEventListener ("mouseleave", event => {
 	});
 
 target5.addEventListener ("mouseenter", event => {
-	javascript.classList.add('animated', 'heartBeat')
-	});
-
-target5.addEventListener ("mouseleave", event => {
-	javascript.classList.remove('animated', 'heartBeat')
-	});
-
-target6.addEventListener ("mouseenter", event => {
 	wordpress.classList.add('animated', 'heartBeat')
 	});
 
-target6.addEventListener ("mouseleave", event => {
+target5.addEventListener ("mouseleave", event => {
 	wordpress.classList.remove('animated', 'heartBeat')
 	});
 
+target6.addEventListener ("mouseenter", event => {
+	vue.classList.add('animated', 'heartBeat')
+	});
+
+target6.addEventListener ("mouseleave", event => {
+	vue.classList.remove('animated', 'heartBeat')
+	});
+
 target7.addEventListener ("mouseenter", event => {
-	versionning.classList.add('animated', 'heartBeat')
+	node.classList.add('animated', 'heartBeat')
 	});
 
 target7.addEventListener ("mouseleave", event => {
-	versionning.classList.remove('animated', 'heartBeat')
+	node.classList.remove('animated', 'heartBeat')
 	});
 
 target8.addEventListener ("mouseenter", event => {

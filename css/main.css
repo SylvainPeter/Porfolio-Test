@@ -30,7 +30,7 @@
 .container {
   display: grid;
   background-color: seashell;
-  grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'skill7       skill7     skill8      skill8' 'portfolio  portfolio   portfolio   portfolio' 'project1   project1     project4      project4' 'project3   project3     project2     project2' 'contact-overlay-image1    contact-overlay-image1     contact-overlay-image1        contact-overlay-image1' 'footer     footer       footer         footer'; }
+  grid-template-areas: 'hero-image1 hero-image1 hero-image1 hero-image1' 'resume     resume   photo    photo' 'skills     skills   skills   skills' 'skill1       skill1     skill2      skill2' 'skill3       skill3     skill4      skill4' 'skill5       skill5     skill6      skill6' 'skill7       skill7     skill8      skill8' 'portfolio  portfolio   portfolio   portfolio' 'project_font   project_font     project_portfolio      project_portfolio' 'project_blog   project_blog     project_ohmyfood     project_ohmyfood' 'contact-overlay-image1    contact-overlay-image1     contact-overlay-image1        contact-overlay-image1' 'footer     footer       footer         footer'; }
 
 .hero-image1 {
   grid-area: hero-image1; }
@@ -86,20 +86,20 @@
   grid-area: portfolio;
   padding: 80px 30px 20px 30px; }
 
-.project1 {
-  grid-area: project1;
+.project_font-grid {
+  grid-area: project_font;
   padding: 80px 0px 20px 0px; }
 
-.project2 {
-  grid-area: project2;
+.project_portfolio-grid {
+  grid-area: project_portfolio;
   padding: 80px 0px 20px 0px; }
 
-.project3 {
-  grid-area: project3;
+.project_blog-grid {
+  grid-area: project_blog;
   padding: 80px 0px 20px 0px; }
 
-.project4 {
-  grid-area: project4;
+.project_ohmyfood-grid {
+  grid-area: project_ohmyfood;
   padding: 80px 0px 20px 0px; }
 
 .contact-overlay-image1 {
@@ -122,7 +122,7 @@ footer {
 @media screen and (max-width: 768px) {
   .container {
     display: grid;
-    grid-template-areas: 'hero-image1' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'skill7' 'skill8' 'portfolio' 'project1' 'project2' 'project3' 'project4' 'contact-overlay-image1 ' 'footer'; }
+    grid-template-areas: 'hero-image1' 'resume' 'photo' 'skills' 'skill1' 'skill2' 'skill3' 'skill4' 'skill5' 'skill6' 'skill7' 'skill8' 'portfolio' 'project_font' 'project_portfolio' 'project_blog' 'project_ohmyfood' 'contact-overlay-image1 ' 'footer'; }
 
   .container-project {
     display: grid;
@@ -448,24 +448,25 @@ a:hover {
   color: white;
   background-color: #48c39a; }
 
-.project1 {
+.project-font-display {
   text-align: center;
   background-color: #48c39a; }
 
-.project2 {
+.project-portfolio-display {
   text-align: center;
   background-color: #48c39a; }
 
-.project3 {
+.project-blog-display {
   text-align: center;
   background-color: #48c39a; }
 
-.project4 {
+.project-ohmyfood-display {
   padding-bottom: 100px;
   text-align: center;
   background-color: #48c39a; }
 
 .project-title {
+  padding-top: 30px;
   color: white;
   border-top: 5px solid;
   font-family: 'Roboto'; }
